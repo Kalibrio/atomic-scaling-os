@@ -38,21 +38,41 @@ Stop there. You'll know if this is for you.
 
 ## Install — 30 seconds
 
-**Requirements:** Claude Code and Git.
+**Requirements:** [Claude Code](https://docs.claude.com/en/docs/claude-code) (v1.0.33+) and Git.
 
-**Step 1: Install on your machine**
+### Option A: Install from marketplace (recommended)
 
-Open Claude Code and paste this:
-
-```
-git clone https://github.com/kalibrio/atomic-scaling-os.git ~/.claude/plugins/atomic-scaling-os && cd ~/.claude/plugins/atomic-scaling-os && claude /plugin install
-```
-
-**Step 2: Add to your repo (optional)**
-
-Share with your team:
+Open Claude Code and run:
 
 ```
+/plugin marketplace add kalibrio/atomic-scaling-os
+```
+
+Then install the plugin:
+
+```
+/plugin install atomic-scaling-os@kalibrio/atomic-scaling-os
+```
+
+### Option B: Manual install
+
+Run this in your **terminal** (not inside Claude Code):
+
+```bash
+git clone https://github.com/kalibrio/atomic-scaling-os.git ~/.claude/plugins/atomic-scaling-os
+```
+
+Then open Claude Code and reload plugins:
+
+```
+/reload-plugins
+```
+
+### Share with your team (optional)
+
+Add Atomic Scaling OS to your project repo so your whole team gets it:
+
+```bash
 cp -Rf ~/.claude/plugins/atomic-scaling-os .claude/plugins/atomic-scaling-os && rm -rf .claude/plugins/atomic-scaling-os/.git
 ```
 
