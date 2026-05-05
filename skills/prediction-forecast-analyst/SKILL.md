@@ -255,6 +255,11 @@ LEARNING:
 - Decision quality vs outcome quality ratio (target: >70% good decisions, regardless of outcome)
 - Forecast-to-decision lag (how fast does a forecast drive a decision?)
 
+## Companion Agents
+
+- **`/prediction-premortem`** — When the cost of being wrong on a forecast is high, run a premortem before committing. Forecasts give you probability ranges; the premortem surfaces the specific failure modes those probabilities are made of.
+- **`/prediction-hypothesis-engine`** — Forecasts feed the H→M→C cycle. Predict the experiment outcome before you run it, then measure the gap.
+
 ---
 
 **Remember**: Superforecasting is a skill. Your first calibration will be rough. By month 6, you'll be 5–8pp better calibrated. By month 12, you'll be making dramatically better decisions because you think in probabilities, not binaries.

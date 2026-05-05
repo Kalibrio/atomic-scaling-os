@@ -154,6 +154,11 @@ Tier-1 learning gets shipped. Tier-2 gets iterated on. Tier-3 goes into the play
 - Time from hypothesis to kill decision (target: 5–7 days; longer = slow learning)
 - Tier-1 learnings shipped (% of experiments that drive product changes)
 
+## Companion Agents
+
+- **`/prediction-premortem`** — Before launching an experiment with real money, real users, or reputational stakes, run a premortem on it. Surfaces failure modes the hypothesis statement won't catch.
+- **`/prediction-forecast-analyst`** — Predict the experiment outcome with a probability range before you run it. Calibration improves the more you do this.
+
 ---
 
 **Remember**: Speed of iteration = Speed of scaling. The goal is not perfect predictions. The goal is fast cycles that compound into exponential learning and growth.

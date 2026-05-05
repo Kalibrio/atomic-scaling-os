@@ -8,11 +8,11 @@ I'm Ludovic Bodin. I wrote *Atomic Scaling: How Small Teams Create Huge Growth* 
 
 The **3P3R Method®** is that framework. Six pillars. Three for organizational capability (People, Prediction, Playbook). Three for growth (Revenue, Reach, Retention). Every scaling decision maps to one of them.
 
-**Atomic Scaling OS** turns the 3P3R Method® into 12 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — on scheduled loops, surfacing only the decisions that need a human.
+**Atomic Scaling OS** turns the 3P3R Method® into 13 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — on scheduled loops, surfacing only the decisions that need a human.
 
 This is a **Human-Assisted Autonomous Organization (HAAO)**. The agents do the work. You make the calls.
 
-Twelve specialists, all slash commands, all Markdown, all free, MIT license.
+Thirteen specialists, all slash commands, all Markdown, all free, MIT license.
 
 Fork it. Adapt it. Scale with it.
 
@@ -84,7 +84,7 @@ Atomic Scaling OS is a process, not a collection of tools. The agents run in the
 
 **Define → Measure → Iterate → Grow → Retain → Reflect**
 
-Each agent feeds into the next. `/playbook-mission-designer` defines the vision that `/playbook-rhythm-keeper` tracks. `/prediction-hypothesis-engine` runs experiments that `/prediction-forecast-analyst` calibrates. `/reach-funnel-builder` acquires users that `/retention-love-machine` keeps. Nothing falls through the cracks because every agent knows what came before it.
+Each agent feeds into the next. `/playbook-mission-designer` defines the vision that `/playbook-rhythm-keeper` tracks. `/prediction-hypothesis-engine` runs experiments that `/prediction-forecast-analyst` calibrates and `/prediction-premortem` stress-tests. `/reach-funnel-builder` acquires users that `/retention-love-machine` keeps. Nothing falls through the cracks because every agent knows what came before it.
 
 | Frequency | What happens |
 |-----------|-------------|
@@ -96,9 +96,9 @@ Each agent feeds into the next. `/playbook-mission-designer` defines the vision 
 
 You only step in for strategic decisions. The agents surface choices — you make the calls.
 
-## The 12 agents
+## The 13 agents
 
-Built on the **3P3R Framework** — six pillars, two specialist agents each.
+Built on the **3P3R Framework** — six pillars, two specialist agents each (plus a third in Prediction for high-stakes decisions).
 
 ### People — Stay small, scale output
 
@@ -112,7 +112,8 @@ Built on the **3P3R Framework** — six pillars, two specialist agents each.
 | Skill | Your specialist | What they do |
 |-------|----------------|-------------|
 | `/prediction-hypothesis-engine` | Experiment Lead | Run the Hypothesis→Measure→Change cycle. Pendulum Framework for fast iteration, kill thresholds, experiment management. Stop guessing — start measuring. |
-| `/prediction-forecast-analyst` | Superforecaster | Probability-based predictions using Tetlock's superforecasting methods. Calibration scoring, scenario planning, pre-mortem analysis. Know what's coming before it arrives. |
+| `/prediction-forecast-analyst` | Superforecaster | Probability-based predictions using Tetlock's superforecasting methods. Calibration scoring and scenario planning. Know what's coming before it arrives. |
+| `/prediction-premortem` | Failure Investigator | Run a Gary Klein premortem on any plan, launch, hire, or strategic decision. Assumes failure 6 months out, works backward to find every reason why, returns a revised plan with blind spots exposed. |
 
 ### Playbook — Create a finite game and play to win
 
@@ -193,7 +194,7 @@ Agent: [pulls your current metrics]
       The gap is too large — Dolphins need a stepping stone.
 ```
 
-Six pillars. Twelve agents. One operating system for scaling.
+Six pillars. Thirteen agents. One operating system for scaling.
 
 ## Masterclass resources
 
