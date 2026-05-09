@@ -150,7 +150,7 @@ The framework behind Atomic Scaling OS. Each pillar addresses a different scalin
 
 | Pillar | Core Principle | Key Frameworks |
 |--------|---------------|----------------|
-| **People** | Stay small, scale output | OP = i × T, magical pairs, EPIC employees, Supercell model |
+| **People** | Stay small, scale output | OP = i × T, magical pairs, EPIC employees, Supercell model, D100 (Talents) Dream-100 pipeline |
 | **Prediction** | Speed of iteration = speed of scaling | Pendulum Framework, Tetlock superforecasting, H→M→C cycle |
 | **Playbook** | Create a finite game and play to win | MUM Model, Moonshot Thinking, Merlin Exercise, BRAW |
 | **Revenue** | Offer your basic service for free | Ikigai of Freemium, M/D/W segmentation, LTV > CAC |
