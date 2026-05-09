@@ -8,11 +8,11 @@ I'm Ludovic Bodin. I wrote *Atomic Scaling: How Small Teams Create Huge Growth* 
 
 The **3P3R Method®** is that framework. Six pillars. Three for organizational capability (People, Prediction, Playbook). Three for growth (Revenue, Reach, Retention). Every scaling decision maps to one of them.
 
-**Atomic Scaling OS** turns the 3P3R Method® into 13 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — on scheduled loops, surfacing only the decisions that need a human.
+**Atomic Scaling OS** turns the 3P3R Method® into 14 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — on scheduled loops, surfacing only the decisions that need a human.
 
 This is a **Human-Assisted Autonomous Organization (HAAO)**. The agents do the work. You make the calls.
 
-Thirteen specialists, all slash commands, all Markdown, all free, MIT license.
+Fourteen specialists, all slash commands, all Markdown, all free, MIT license.
 
 Fork it. Adapt it. Scale with it.
 
@@ -96,9 +96,9 @@ Each agent feeds into the next. `/playbook-mission-designer` defines the vision 
 
 You only step in for strategic decisions. The agents surface choices — you make the calls.
 
-## The 13 agents
+## The 14 agents
 
-Built on the **3P3R Framework** — six pillars, two specialist agents each (plus a third in Prediction for high-stakes decisions).
+Built on the **3P3R Framework** — six pillars, two specialist agents each (plus a third in People for talent pipeline and a third in Prediction for high-stakes decisions).
 
 ### People — Stay small, scale output
 
@@ -106,6 +106,7 @@ Built on the **3P3R Framework** — six pillars, two specialist agents each (plu
 |-------|----------------|-------------|
 | `/people-team-architect` | Org Designer | Design high-output teams. OP = i × T scoring, magical pairs, EPIC evaluation, Supercell autonomous cells, Valve 2.5x rule. Tells you who to hire (and who not to). |
 | `/people-culture-pulse` | Culture Analyst | Monitor culture health with a 7-dimension pulse survey. Culture Health Score (0-100), burnout detection, trust metrics. Weekly alerts before problems become crises. |
+| `/people-d100-talents` | Talent Pipeline Manager | Build the Dream-100 of the people who, if any one joined, would change the company's trajectory. Paste a LinkedIn URL and get a paste-ready row for your D100 Talents sheet. 13-column schema, 5-step funnel (Followed → Connected → Exchanged → Offered → On-boarded). |
 
 ### Prediction — Speed of iteration = speed of scaling
 
@@ -149,7 +150,7 @@ The framework behind Atomic Scaling OS. Each pillar addresses a different scalin
 
 | Pillar | Core Principle | Key Frameworks |
 |--------|---------------|----------------|
-| **People** | Stay small, scale output | OP = i × T, magical pairs, EPIC employees, Supercell model |
+| **People** | Stay small, scale output | OP = i × T, magical pairs, EPIC employees, Supercell model, D100 (Talents) Dream-100 pipeline |
 | **Prediction** | Speed of iteration = speed of scaling | Pendulum Framework, Tetlock superforecasting, H→M→C cycle |
 | **Playbook** | Create a finite game and play to win | MUM Model, Moonshot Thinking, Merlin Exercise, BRAW |
 | **Revenue** | Offer your basic service for free | Ikigai of Freemium, M/D/W segmentation, LTV > CAC |
@@ -194,7 +195,7 @@ Agent: [pulls your current metrics]
       The gap is too large — Dolphins need a stepping stone.
 ```
 
-Six pillars. Thirteen agents. One operating system for scaling.
+Six pillars. Fourteen agents. One operating system for scaling.
 
 ## Masterclass resources
 
