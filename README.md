@@ -40,6 +40,8 @@ Stop there. You'll know if this is for you.
 
 **Requirements:** [Claude Code](https://docs.claude.com/en/docs/claude-code) (v1.0.33+) and Git.
 
+> Want the full walkthrough — including how to use the skills in Claude.ai web chat, trigger phrases, troubleshooting, and team setup? See **[INSTALL.md](INSTALL.md)**.
+
 ### Option A: Install from marketplace (recommended)
 
 Open Claude Code and run:
