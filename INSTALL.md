@@ -1,178 +1,227 @@
 # Install Atomic Scaling OS
 
-Two ways to use the 15 agents. Pick the one that matches where you want to run them.
+Two ways to use the 15 agents. The first one (Claude Code Desktop) is the recommended setup — it's what the skills are designed for, and it works without ever touching a terminal.
 
-| If you want… | Use |
+| You want to… | Use |
 |---|---|
-| The full HAAO experience: slash commands, parallel sub-agents, HTML reports written to disk, scheduled loops, auto-update from GitHub | **[Path A — Claude Code](#path-a--claude-code-recommended)** |
-| To run a skill quickly in the browser with no setup, or share with a non-technical teammate | **[Path B — Claude.ai (web chat)](#path-b--claudeai-web-chat)** |
-
-The skills are **designed for Claude Code** — that's where parallel agent spawning and file output work properly. Claude.ai runs the same skill content sequentially in chat.
+| Run the skills on your Mac/PC with parallel sub-agents, HTML reports written to your computer, scheduled loops, and one-click updates from GitHub | **[Path A — Claude Code Desktop](#path-a--claude-code-desktop-recommended-5-minutes)** |
+| Run a skill in your browser at claude.ai with no install (slower, no parallel agents, no file output) | **[Path B — Claude.ai web chat](#path-b--claudeai-web-chat)** |
 
 ---
 
-## Path A — Claude Code (recommended)
+## Path A — Claude Code Desktop (recommended, 5 minutes)
 
-### Step 1 — Install Claude Code (once)
+If you've never used Claude Code before, follow these exact steps. No terminal needed.
 
-Download from **[claude.com/code](https://claude.com/code)**. Available as:
-- CLI (terminal, all platforms)
-- Desktop app (Mac, Windows)
-- VS Code extension
-- JetBrains extension
+### Step 1 — Download Claude Code Desktop
 
-Sign in with your Claude account. Requires Claude Code v1.0.33+.
+1. Open your browser and go to **https://claude.com/code**
+2. Click **"Download for Mac"** (or Windows / Linux — the page auto-detects your OS).
+3. Open the downloaded `.dmg` file.
+4. Drag **Claude Code** into your **Applications** folder.
+5. Open **Applications** → double-click **Claude Code**.
+6. First launch: macOS will ask *"Are you sure you want to open this app from the internet?"* → click **Open**.
+7. Sign in with the same Claude account you use on claude.ai (button says *"Sign in with Claude"* — it opens a browser, you log in, you come back).
 
-### Step 2 — Add the marketplace (once)
+You should now see a Claude Code window. It looks like a chat with a text box at the bottom and a sidebar showing your project folder.
 
-Inside Claude Code, type:
+### Step 2 — Open any folder as a project
+
+Claude Code needs a "project folder" — it can be anything, even an empty one. The skills don't care which folder, they just need a place to write report files.
+
+1. In Claude Code: **File menu → Open Folder…**
+2. Pick any folder. If you don't have one ready, create a folder on your Desktop called `atomic-scaling-test` and pick that.
+
+You'll see the folder name appear at the top of the Claude Code window.
+
+### Step 3 — Install the Atomic Scaling OS plugin
+
+Now you're going to type two commands. **Type them into the chat box at the bottom of the Claude Code window** — the same place you'd type a message, exactly like ChatGPT.
+
+**Type this and press Enter:**
 
 ```
 /plugin marketplace add kalibrio/atomic-scaling-os
 ```
 
-This tells Claude Code "look at the `kalibrio/atomic-scaling-os` repo on GitHub as a source of plugins."
+Claude Code will respond confirming it added the repo as a marketplace. Takes 1–2 seconds.
 
-### Step 3 — Install the plugin (once)
+**Then type this and press Enter:**
 
 ```
 /plugin install atomic-scaling-os@kalibrio/atomic-scaling-os
 ```
 
-Claude Code clones the repo into `~/.claude/plugins/atomic-scaling-os/`, reads `.claude-plugin/plugin.json`, and registers all 15 skills.
+Claude Code will respond saying the plugin is installed and 15 skills are now available.
 
-### Step 4 — Confirm it worked
+### Step 4 — Test that it worked
 
-```
-/plugin list
-```
-
-You should see `atomic-scaling-os` listed. Type `/` and start typing `play` or `pred` — autocomplete should now show:
+In the same chat box, just type a `/` (forward slash). A menu pops up showing available commands. Start typing `play` — you should see:
 
 - `/playbook-mission-designer`
-- `/playbook-rhythm-keeper`
 - `/playbook-postsuccess`
-- `/prediction-hypothesis-engine`
-- `/prediction-forecast-analyst`
-- `/prediction-premortem`
-- …and the other 9 agents.
+- `/playbook-rhythm-keeper`
 
-### Step 5 — Summon a skill
+If you see those three, you're done installing. 🎉
 
-Two ways:
+### Step 5 — Run your first skill
 
-**By slash command:**
+Let's try `/playbook-postsuccess` on a real example. Type into the chat:
 
 ```
 /playbook-postsuccess
+
+I'm thinking of running a 6-week paid cohort for founders
+on how to operationalize the 3P3R Method using AI agents.
+$2,000 per seat, 30 founders per cohort. Target: founders
+doing $500k–$5M ARR who want to scale without hiring.
 ```
 
-**By trigger phrase** — every skill's frontmatter registers mandatory trigger phrases. Claude Code matches them and auto-invokes the right skill:
+Press Enter.
 
-```
-postsuccess this: I'm launching a $297 workshop on Claude Cowork for marketing teams
-```
+What you should see:
 
-or
+1. Claude confirms it understands the context and sets the *"12 months from now, this 100x'd"* frame.
+2. It generates a list of 5–8 leverage points (hidden compounding mechanisms).
+3. It spawns one sub-agent per leverage point in parallel — you'll see them running.
+4. It synthesizes the most likely compounding path, biggest asymmetric upside, the inverted assumption, a revised strategy, and a pre-launch leverage checklist.
+5. It writes two files into your project folder: `postsuccess-report-[timestamp].html` (opens in your browser automatically) and `postsuccess-transcript-[timestamp].md`.
 
-```
-what would make this 100x?
-```
+Total run: ~2–3 minutes.
 
-```
-premortem this plan before I commit
-```
+### Step 6 — Try the other 14 skills
 
-### Step 6 — Keep it updated
+Once installed, you have all 15 available the same way. Type `/` in the chat box and start typing a pillar name:
 
-When the repo gets new skills or improvements:
+- Type `/peo` → People (`team-architect`, `culture-pulse`, `d100-talents`)
+- Type `/pre` → Prediction (`hypothesis-engine`, `forecast-analyst`, `premortem`)
+- Type `/play` → Playbook (`mission-designer`, `rhythm-keeper`, `postsuccess`)
+- Type `/rev` → Revenue (`freemium-architect`, `optimizer`)
+- Type `/rea` → Reach (`funnel-builder`, `growth-tracker`)
+- Type `/ret` → Retention (`love-machine`, `community-engine`)
+
+Each one is a slash command that opens a session with that specialist agent.
+
+### Step 7 — Two power-user tricks
+
+**Trigger by phrase instead of slash command.** Every skill registers natural-language triggers in its description. So instead of `/playbook-postsuccess` you can just say *"postsuccess this: …"* or *"what would make this 100x?"* — Claude Code matches the phrase and auto-invokes the right skill.
+
+**Update when the repo changes.** New skills or improvements land in the GitHub repo regularly. To pull them:
 
 ```
 /plugin update atomic-scaling-os
 ```
 
-### Step 7 (optional) — Share with your team
+### Troubleshooting (Path A)
 
-If your team works in a shared repo, copy the plugin into the repo so everyone gets it on clone:
+| Problem | Fix |
+|---|---|
+| `/plugin` commands don't appear in the menu | You're on an older Claude Code. Update via **Claude Code menu → Check for Updates**. Need v1.0.33+. |
+| Plugin installs but `/playbook-postsuccess` doesn't appear when typing `/play` | Type `/reload-plugins` and press Enter. Then try again. |
+| You don't see the chat box | Click into the main window first. The chat box is at the bottom. If still missing: **View menu → Show Chat**. |
+| Skill runs but no HTML file appears in your folder | The skill needs a folder open as a project (Step 2). If you skipped it, do it now and re-run the skill. |
+| You get "permission" prompts when the skill writes files | Click **Allow** — it's writing to the folder you opened in Step 2. |
+| `/plugin marketplace add` fails with a network error | Check your internet. The command clones the repo from GitHub. If you're behind a corporate firewall, see the manual install fallback below. |
+
+### What's actually happening under the hood
+
+- `/plugin marketplace add kalibrio/atomic-scaling-os` → tells Claude Code "look at this GitHub repo as a source of plugins." Clones the repo into `~/.claude/plugins/atomic-scaling-os/` on your computer.
+- `/plugin install …` → activates that plugin, registering all 15 skills as slash commands.
+- When you type `/playbook-postsuccess`, Claude Code finds the file `~/.claude/plugins/atomic-scaling-os/skills/playbook-postsuccess/SKILL.md` and uses its contents as the instructions for that session.
+- Sub-agents run as parallel Claude calls — that's why the skill can analyze 6+ leverage points simultaneously rather than one at a time.
+- HTML reports get written to whatever folder you opened in Step 2.
+
+### Manual install fallback (terminal users only)
+
+If `/plugin marketplace add` doesn't work for any reason, you can clone the repo directly. Open **Terminal** (Applications → Utilities → Terminal on Mac) and paste:
+
+```bash
+git clone https://github.com/kalibrio/atomic-scaling-os.git ~/.claude/plugins/atomic-scaling-os
+```
+
+Then in Claude Code, run `/reload-plugins`. Skills appear after the reload.
+
+### Share with your team
+
+Copy the plugin into a shared project repo so your whole team gets it on clone:
 
 ```bash
 cp -Rf ~/.claude/plugins/atomic-scaling-os .claude/plugins/atomic-scaling-os
 rm -rf .claude/plugins/atomic-scaling-os/.git
 ```
 
-Commit the `.claude/` directory. Nothing touches your `PATH` or runs in the background.
+Commit the `.claude/` directory. Nothing touches your `PATH` or runs in the background — everything stays inside the project folder.
 
 ---
 
-## Path B — Claude.ai (web chat)
+## Path B — Claude.ai web chat
 
-Works in the browser, no install. Skills run sequentially (no parallel sub-agents) and no files are written to disk — Claude responds in chat instead.
+Works in the browser at claude.ai with no install. Skills run sequentially (no parallel sub-agents) and no files are written to disk — Claude responds in chat instead. Good for trying a skill quickly or sharing with a non-technical teammate.
 
-### Step 1 — Get the raw `SKILL.md` from GitHub
+### Step 1 — Grab the raw SKILL.md from GitHub
 
-Each skill lives in its own folder under `skills/`. Browse to the one you want, e.g.:
+Each skill lives in its own folder under `skills/` in the repo. Browse to the one you want, e.g.:
 
 ```
 https://github.com/Kalibrio/atomic-scaling-os/tree/main/skills/playbook-postsuccess
 ```
 
-Click `SKILL.md` → click the **Raw** button → copy the entire contents (including the YAML frontmatter at the top, between the `---` lines).
+Click `SKILL.md` → click the **Raw** button (top-right of the file viewer) → copy the entire contents, including the YAML frontmatter between the `---` lines at the top.
 
-Or grab the raw URL directly:
+Direct raw URL for that skill:
 
 ```
 https://raw.githubusercontent.com/Kalibrio/atomic-scaling-os/main/skills/playbook-postsuccess/SKILL.md
 ```
 
+Swap the skill name in the URL to grab any of the other 14.
+
 ### Step 2 — Open the Claude.ai Skills panel
 
-Go to **[claude.ai](https://claude.ai)** → click your profile (bottom-left) → **Settings** → **Capabilities** → **Skills** → **Create skill** (or **Upload**).
+1. Go to **https://claude.ai**
+2. Click your profile picture (bottom-left).
+3. Click **Settings**.
+4. Click **Capabilities** in the left sidebar.
+5. Click **Skills** → **Create skill** (or **Upload**).
 
 ### Step 3 — Create the skill
 
-- **Name:** must match the `name:` field in the frontmatter (e.g. `playbook-postsuccess`)
-- **Content:** paste the entire `SKILL.md` you copied
-- **Save**
+- **Name:** must match the `name:` field at the top of the SKILL.md (e.g. `playbook-postsuccess`).
+- **Content:** paste the entire SKILL.md you copied — frontmatter included.
+- Click **Save**.
 
 Repeat per skill you want available. Each skill is its own entry in Claude.ai.
 
-### Step 4 — Summon in a chat
+### Step 4 — Summon a skill in a chat
 
-Start a new conversation. Either:
+Start a new conversation at claude.ai. Either:
 
 - Type the slash command: `/playbook-postsuccess`
-- Or type a trigger phrase from the skill description: `postsuccess this: …`, `what would make this 100x?`, `premortem this plan`, etc.
+- Or type a trigger phrase from the skill description: *"postsuccess this: …"*, *"what would make this 100x?"*, *"premortem this plan"*, etc.
 
 Claude.ai detects the trigger from the skill description and activates the skill.
 
 ### Step 5 — Keep them in sync
 
-Claude.ai skills don't auto-pull from GitHub. When the repo updates, re-copy the new `SKILL.md` and **Edit** the corresponding Skill in Claude.ai (or delete and recreate).
+Claude.ai skills don't auto-pull from GitHub. When the repo updates, re-copy the new SKILL.md and **Edit** the corresponding Skill in Claude.ai (or delete and recreate).
+
+### Troubleshooting (Path B)
+
+| Problem | Fix |
+|---|---|
+| Skill doesn't trigger when you type the slash command | Make sure the `name:` in the SKILL.md frontmatter exactly matches what you named the skill in Claude.ai (case-sensitive, hyphens not underscores). |
+| Trigger phrases don't fire | Use a phrase from the "MANDATORY TRIGGERS" line in the skill description verbatim. If still nothing, just use the slash command. |
+| No HTML report appears | Expected — Claude.ai doesn't write files. The skill responds in chat. For file output, use Path A. |
+| Parallel sub-agents don't run | Expected — Claude.ai runs the skill sequentially. For parallel execution, use Path A. |
 
 ---
 
-## Troubleshooting
+## Which path should you use?
 
-**Slash commands don't appear in Claude Code after install.**
-Run `/reload-plugins` (or restart Claude Code). Then `/plugin list` to confirm `atomic-scaling-os` is enabled.
+- **Most users → Path A (Claude Code Desktop).** It's what the skills are built for. Parallel agents, file output, slash autocomplete, one-line updates, scheduled loops. The 5-minute install is worth it.
+- **Quick test or non-technical teammate → Path B (Claude.ai).** No install, runs in the browser. Trade-off: sequential, no files, manual per-skill upload.
 
-**Trigger phrases don't fire.**
-The skill description includes "MANDATORY TRIGGERS" and "STRONG TRIGGERS" lists. Use one of those phrases verbatim. If you're paraphrasing and it doesn't trigger, just use the slash command directly.
-
-**Skill ran but no HTML report was written.**
-HTML report output only works in Claude Code (the skill writes to your workspace). Claude.ai responds in chat instead.
-
-**`/plugin marketplace add` fails.**
-Make sure you're on Claude Code v1.0.33+. Check version with `/version`.
-
-**Manual install fallback (Claude Code).**
-If the marketplace command doesn't work, clone directly:
-
-```bash
-git clone https://github.com/kalibrio/atomic-scaling-os.git ~/.claude/plugins/atomic-scaling-os
-```
-
-Then in Claude Code: `/reload-plugins`.
+For your own day-to-day use of the 3P3R OS, **Path A is the intended runtime**.
 
 ---
 
@@ -188,3 +237,15 @@ Then in Claude Code: `/reload-plugins`.
 - **Retention** — `/retention-love-machine`, `/retention-community-engine`
 
 See the [README](README.md) for what each agent does.
+
+---
+
+## Still stuck?
+
+If a specific step isn't working, [open an issue on GitHub](https://github.com/Kalibrio/atomic-scaling-os/issues/new) with:
+
+- Which step number you're on
+- What you typed
+- What Claude Code (or Claude.ai) showed in response
+
+You'll usually get unstuck in a single back-and-forth.

@@ -266,8 +266,8 @@
       </div>
       <button class="copy-btn" onclick="navigator.clipboard.writeText('/plugin marketplace add kalibrio/atomic-scaling-os').then(()=>{this.textContent='✓ Copied';setTimeout(()=>this.textContent='Copy',1600)})">Copy</button>
     </div>
-    <div style="margin-top:1rem;font-size:.78rem;color:var(--cream-muted);text-align:right">
-      Prefer a full walkthrough (Claude Code + Claude.ai web chat, trigger phrases, troubleshooting)? <a href="https://github.com/Kalibrio/atomic-scaling-os/blob/main/INSTALL.md" target="_blank" rel="noopener" style="color:var(--green);text-decoration:none;border-bottom:1px solid var(--green-border)">Read the install guide →</a>
+    <div style="margin-top:1rem;font-size:.78rem;color:var(--cream-muted)">
+      Never used Claude Code? The full walkthrough below takes 5 minutes, no terminal needed — or <a href="https://github.com/Kalibrio/atomic-scaling-os/blob/main/INSTALL.md" target="_blank" rel="noopener" style="color:var(--green);text-decoration:none;border-bottom:1px solid var(--green-border)">read it on GitHub →</a>
     </div>
     <div class="stats-bar">
       <div><div class="stat-num">15</div><div class="stat-label">Claude Agents</div></div>
@@ -435,36 +435,84 @@
 <section id="install">
   <div class="container">
     <div class="section-label">Install</div>
-    <h2 class="section-title">Running in 30 seconds.</h2>
-    <p class="section-sub">Requirements: <a href="https://docs.claude.com/en/docs/claude-code" target="_blank" style="color:var(--green);text-decoration:none">Claude Code</a> v1.0.33+ and Git. Nothing touches your PATH or runs in the background.</p>
+    <h2 class="section-title">Running in 5 minutes. No terminal needed.</h2>
+    <p class="section-sub">Never used Claude Code? Follow these exact steps. Anything weird, jump to the <a href="https://github.com/Kalibrio/atomic-scaling-os/blob/main/INSTALL.md#troubleshooting-path-a" target="_blank" style="color:var(--green);text-decoration:none">troubleshooting section</a> in the full guide.</p>
     <div class="install-steps">
+
       <div class="install-step">
-        <div class="install-step-hdr"><div class="step-dot"></div><span>Option A — Install from marketplace (recommended)</span></div>
+        <div class="install-step-hdr"><div class="step-dot"></div><span>Step 1 — Download Claude Code Desktop</span></div>
         <div class="install-step-code">
-          <span class="c"># Open Claude Code and run:</span><br>
+          <span class="c"># In your browser, go to:</span><br>
+          <a href="https://claude.com/code" target="_blank" style="color:var(--green-light);text-decoration:none"><span class="cmd">https://claude.com/code</span></a><br><br>
+          <span class="c"># Click "Download for Mac" (or your OS).</span><br>
+          <span class="c"># Open the .dmg, drag Claude Code into Applications.</span><br>
+          <span class="c"># Open it. Sign in with your Claude account.</span>
+        </div>
+      </div>
+
+      <div class="install-step">
+        <div class="install-step-hdr"><div class="step-dot"></div><span>Step 2 — Open any folder as a project</span></div>
+        <div class="install-step-code">
+          <span class="c"># In Claude Code: File menu → Open Folder…</span><br>
+          <span class="c"># Pick any folder — even an empty one on your Desktop.</span><br>
+          <span class="c"># The skills write HTML reports into this folder.</span>
+        </div>
+      </div>
+
+      <div class="install-step">
+        <div class="install-step-hdr"><div class="step-dot"></div><span>Step 3 — Install the plugin (two commands)</span></div>
+        <div class="install-step-code">
+          <span class="c"># Type these into the chat box at the bottom</span><br>
+          <span class="c"># of the Claude Code window — like ChatGPT.</span><br><br>
           <span class="cmd">/plugin marketplace add</span> kalibrio/atomic-scaling-os<br><br>
-          <span class="c"># Then install:</span><br>
           <span class="cmd">/plugin install</span> atomic-scaling-os@kalibrio/atomic-scaling-os
         </div>
       </div>
+
       <div class="install-step">
-        <div class="install-step-hdr"><div class="step-dot"></div><span>Option B — Manual install via terminal</span></div>
+        <div class="install-step-hdr"><div class="step-dot"></div><span>Step 4 — Confirm 15 skills are loaded</span></div>
         <div class="install-step-code">
-          <span class="c"># Run in your terminal (not inside Claude Code):</span><br>
-          <span class="cmd">git clone</span> https://github.com/kalibrio/atomic-scaling-os.git ~/.claude/plugins/atomic-scaling-os<br><br>
-          <span class="c"># Reload plugins inside Claude Code:</span><br>
-          <span class="cmd">/reload-plugins</span>
+          <span class="c"># Type "/" in the chat box. A menu pops up.</span><br>
+          <span class="c"># Start typing "play" — you should see:</span><br><br>
+          <span class="cmd">/playbook-mission-designer</span><br>
+          <span class="cmd">/playbook-postsuccess</span><br>
+          <span class="cmd">/playbook-rhythm-keeper</span><br><br>
+          <span class="c"># If you see those, you're done installing.</span>
         </div>
       </div>
+
       <div class="install-step">
-        <div class="install-step-hdr"><div class="step-dot"></div><span>Recommended quick start sequence</span></div>
+        <div class="install-step-hdr"><div class="step-dot"></div><span>Step 5 — Run your first skill</span></div>
         <div class="install-step-code">
-          <span class="cmd">/playbook-mission-designer</span>   <span class="c">— define mission, user, method</span><br>
-          <span class="cmd">/revenue-optimizer</span>            <span class="c">— audit your unit economics</span><br>
-          <span class="cmd">/people-culture-pulse</span>         <span class="c">— check your team's health</span><br>
-          <span class="cmd">/playbook-rhythm-keeper</span>       <span class="c">— establish your weekly cadence</span>
+          <span class="cmd">/playbook-postsuccess</span><br><br>
+          <span class="c"># I'm running a 6-week paid cohort for founders on</span><br>
+          <span class="c"># operationalizing 3P3R with AI agents. $2k/seat,</span><br>
+          <span class="c"># 30 founders. Target: $500k–$5M ARR founders.</span><br><br>
+          <span class="c"># Press Enter. Claude spawns parallel sub-agents,</span><br>
+          <span class="c"># synthesizes, and writes an HTML report into</span><br>
+          <span class="c"># your folder. Total: ~2–3 minutes.</span>
         </div>
       </div>
+
+      <div class="install-step">
+        <div class="install-step-hdr"><div class="step-dot"></div><span>Then explore the other 14</span></div>
+        <div class="install-step-code">
+          <span class="cmd">/peo</span>    <span class="c">— People (team, culture, talent)</span><br>
+          <span class="cmd">/pre</span>    <span class="c">— Prediction (experiments, forecasts, premortem)</span><br>
+          <span class="cmd">/play</span>   <span class="c">— Playbook (mission, rhythm, postsuccess)</span><br>
+          <span class="cmd">/rev</span>    <span class="c">— Revenue (freemium, unit economics)</span><br>
+          <span class="cmd">/rea</span>    <span class="c">— Reach (funnels, acquisition)</span><br>
+          <span class="cmd">/ret</span>    <span class="c">— Retention (love machine, community)</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:2.4rem;padding:1.5rem 1.8rem;background:var(--bg-3);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap">
+      <div style="font-size:.86rem;color:var(--cream-dim);line-height:1.6">
+        <strong style="color:var(--cream)">Want the long-form walkthrough?</strong> The full guide on GitHub covers troubleshooting, trigger-phrase invocation, team sharing, manual install for corporate-firewall setups, and Path B for running skills in Claude.ai web chat without installing anything.
+      </div>
+      <a href="https://github.com/Kalibrio/atomic-scaling-os/blob/main/INSTALL.md" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.45rem;background:var(--green);color:#060606;font-family:'Outfit',sans-serif;font-weight:600;font-size:.83rem;letter-spacing:.04em;text-transform:uppercase;padding:.72rem 1.5rem;text-decoration:none;border-radius:2px;white-space:nowrap">Read the full install guide →</a>
     </div>
   </div>
 </section>
