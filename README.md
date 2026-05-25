@@ -8,11 +8,11 @@ I'm Ludovic Bodin. I wrote *Atomic Scaling: How Small Teams Create Huge Growth* 
 
 The **3P3R Method®** is that framework. Six pillars. Three for organizational capability (People, Prediction, Playbook). Three for growth (Revenue, Reach, Retention). Every scaling decision maps to one of them.
 
-**Atomic Scaling OS** turns the 3P3R Method® into 14 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — on scheduled loops, surfacing only the decisions that need a human.
+**Atomic Scaling OS** turns the 3P3R Method® into 15 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — on scheduled loops, surfacing only the decisions that need a human.
 
 This is a **Human-Assisted Autonomous Organization (HAAO)**. The agents do the work. You make the calls.
 
-Fourteen specialists, all slash commands, all Markdown, all free, MIT license.
+Fifteen specialists, all slash commands, all Markdown, all free, MIT license.
 
 Fork it. Adapt it. Scale with it.
 
@@ -84,7 +84,7 @@ Atomic Scaling OS is a process, not a collection of tools. The agents run in the
 
 **Define → Measure → Iterate → Grow → Retain → Reflect**
 
-Each agent feeds into the next. `/playbook-mission-designer` defines the vision that `/playbook-rhythm-keeper` tracks. `/prediction-hypothesis-engine` runs experiments that `/prediction-forecast-analyst` calibrates and `/prediction-premortem` stress-tests. `/reach-funnel-builder` acquires users that `/retention-love-machine` keeps. Nothing falls through the cracks because every agent knows what came before it.
+Each agent feeds into the next. `/playbook-mission-designer` defines the vision that `/playbook-rhythm-keeper` tracks and `/playbook-postsuccess` expands. `/prediction-hypothesis-engine` runs experiments that `/prediction-forecast-analyst` calibrates and `/prediction-premortem` stress-tests. `/reach-funnel-builder` acquires users that `/retention-love-machine` keeps. Nothing falls through the cracks because every agent knows what came before it.
 
 | Frequency | What happens |
 |-----------|-------------|
@@ -96,9 +96,9 @@ Each agent feeds into the next. `/playbook-mission-designer` defines the vision 
 
 You only step in for strategic decisions. The agents surface choices — you make the calls.
 
-## The 14 agents
+## The 15 agents
 
-Built on the **3P3R Framework** — six pillars, two specialist agents each (plus a third in People for talent pipeline and a third in Prediction for high-stakes decisions).
+Built on the **3P3R Framework** — six pillars, two specialist agents each (plus a third in People for talent pipeline, a third in Prediction to stress-test high-stakes decisions, and a third in Playbook to expand the strategic possibility space).
 
 ### People — Stay small, scale output
 
@@ -122,6 +122,7 @@ Built on the **3P3R Framework** — six pillars, two specialist agents each (plu
 |-------|----------------|-------------|
 | `/playbook-mission-designer` | Chief Strategist | Define your playbook with the MUM Model (Mission/User/Method), Moonshot Thinking (10x > 10%), and the Merlin Exercise — work backwards from 5 years to what you do in the next 30 days. |
 | `/playbook-rhythm-keeper` | Operations Lead | Maintain business cadence. Weekly scorecards, 12-quarter planning, Beast/Least prioritization. The rhythm that keeps scaling companies from losing focus. |
+| `/playbook-postsuccess` | Success Architect | The strategic counterpart to `/prediction-premortem` and a deep-cousin of the Merlin Exercise. Assumes the initiative became 10–100x more successful than expected 12 months out, then reverse-engineers the hidden leverage, compounding loops, and asymmetric advantages that made it inevitable. Returns a revised strategy with bigger ambition and stronger compounding. |
 
 ### Revenue — Offer your basic service for free
 
@@ -195,7 +196,7 @@ Agent: [pulls your current metrics]
       The gap is too large — Dolphins need a stepping stone.
 ```
 
-Six pillars. Fourteen agents. One operating system for scaling.
+Six pillars. Fifteen agents. One operating system for scaling.
 
 ## Masterclass resources
 
