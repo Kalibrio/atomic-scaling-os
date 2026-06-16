@@ -1,0 +1,15 @@
+{
+    "name": "fundraising-os",
+    "description": "12 Claude skills that orchestrate the operational raise — target list, warm intros, deck, model, personalised outreach, pipeline, data room, investor warmth, and the close, paced by a chief-of-staff skill. A Human-Assisted Autonomous Organization (HAAO) for fundraising, by Ludovic Bodin. Decides passive vs. active mode, then runs the whole process so founders focus on the conversations that matter.",
+    "version": "1.0.0",
+    "author": {
+          "name": "Ludovic Bodin",
+          "email": "lbodin@gmail.com",
+          "url": "https://atomicscaling.com"
+    },
+    "repository": "https://github.com/kalibrio/fundraising-os",
+    "homepage": "https://fundraising.atomicscaling.com",
+    "license": "MIT",
+    "keywords": ["fundraising", "raise", "seed", "venture capital", "investor", "warm intro", "data room", "pipeline", "term sheet", "startup", "founder"],
+    "skills": "./skills/"
+}
