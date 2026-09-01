@@ -1,211 +1,187 @@
+---
+name: retention-community-engine
+description: "Atomic Scaling RETENTION agent for community as a moat. Applies CMX's 6 principles — leverage an existing community rather than launching one, make people feel safe, curate the first 50 members, create live experiences, manufacture the first interactions, and show up personally as the founder — to move users from 'I use X' to 'I AM an X player'. Audits where your users already gather, plans the launch, builds the engagement calendar, runs the feedback loop, and scores community health. Use when the user wants a community, has one that's dying, or is trying to build identity-driven retention. TRIGGERS: 'build a community', 'our community is dead', 'should we start a forum', 'community strategy', 'community management', 'user feedback loop', 'NPS', 'ambassador program', 'how do we get superfans', 'community health'. Do NOT trigger for content calendars, offers, and win-back sequences (that's /retention-love-machine) or for internal team culture (/people-culture-pulse)."
+---
+
 # retention-community-engine
 
-**Name:** retention-community-engine
-**Pillar:** RETENTION (Ch6 — Community building, CMX 6 principles, identity, user feedback loops)
-**Type:** Claude Agent / Skill
-**Trigger:** Community strategy, user forums, community management, fan engagement, user feedback, NPS, community health, identity building, or direct invocation `/retention-community-engine`
+Part of the Atomic Scaling OS — Pillar 5: Retention.
 
----
+Community is a moat and a retention engine. The goal is identity: users who say "I AM a [community member]," not "I use [product]." Communities with strong identity retain 3-5x better than transactional users, and community is the most underrated retention lever in most companies.
 
-## Purpose
-Build community as a moat and retention engine. Use CMX's 6 principles to systematically develop user communities where players say "I AM a [community member]" not just "I use [product]." Communities with strong identity retain 3-5x better than transactional users. Community = the most underrated retention lever in most companies.
+## CMX's 6 principles
 
----
-
-## Core Frameworks
-
-### CMX's 6 Principles for Thriving Communities
-
-#### 1. Don't "Launch" a Community — Leverage an Existing One
+### 1. Don't launch a community — leverage an existing one
 **Your users already gather somewhere.** Find it. Don't build from scratch; piggyback on existing momentum.
-- DOTA players gathered on PlayDota forums, Reddit, Discord servers
+- DOTA players had already gathered on PlayDota, subreddits, and chat servers
 - Riot didn't build a community; they found DOTA players and brought them to League
-- **Action:** Scout where your potential users already hang out (Reddit, Discord, forums, Twitch, TikTok). Build presence there first. Only build proprietary community once you have critical mass.
+- **Action:** scout where your users already are (Reddit, forums, chat servers, Twitch, TikTok). Show up there first. Build your own space only after you have critical mass.
 
-#### 2. People Join Communities to Feel Safe and Validated
+### 2. People join to feel safe and validated
 **Psychological safety first.** Communities aren't about features; they're about belonging.
-- Early community must feel exclusive and safe
-- Moderation is critical: remove toxicity immediately
-- Create rituals that make members feel like insiders (inside jokes, terminology, traditions)
-- **Action:** Screen early members. Hire community leaders who embody the culture. Host ice-breaker events. Make new members feel welcomed, not judged.
+- Early on it should feel exclusive and safe
+- Moderation is non-negotiable: remove toxicity immediately, visibly
+- Build rituals that make members insiders — vocabulary, in-jokes, traditions
+- **Action:** screen early members. Recruit community leaders who already embody the culture. Make new arrivals feel welcomed, not evaluated.
 
-#### 3. Curate High-Quality Members to Start
-**The first 50 members set the tone forever.** Be selective.
-- Recruit founding members who are influencers or respected players in the space
-- Riot Games hired Steve "Guinsoo" Feak (DOTA legend) to run early community; he set the culture
-- Early members should be opinionated, engaged, and representative of your ideal community
-- **Action:** Identify 50 founding members. Personally invite them. Have 1:1 calls with them. Make them feel special.
+### 3. Curate the first 50 members
+**The first 50 set the tone forever.** Be selective.
+- Recruit founding members who are respected voices in the space
+- Riot hired Steve "Guinsoo" Feak, a DOTA legend, to run early community; he set the culture
+- Early members should be opinionated, engaged, and representative of who you want more of
+- **Action:** name 50 people. Invite each personally. Get on a call with each one. Make them feel chosen, because they were.
 
-#### 4. In-Person & Live Online Experiences Create Stronger Bonds
-**Digital alone is not enough.** Real connections require face time.
-- Tournaments (online or offline)
-- Meetups (local community organizers)
-- Esports events (franchises, regional competitions)
-- Live streams with founder involvement
-- Conventions (where communities gather IRL)
-- **Action:** Host quarterly regional meetups or online tournaments. Founder participates. Story and photos shared back to community (FOMO loop).
+### 4. Live experiences create stronger bonds
+**Digital alone isn't enough.** Real connection needs real time together.
+- Tournaments, online or offline
+- Local meetups run by community organizers
+- Competitive events and regional brackets
+- Live streams with the founder actually present
+- **Action:** run a quarterly meetup or tournament. The founder participates. Photos and stories go back to the community — that's the FOMO loop.
 
-#### 5. Manufacture the First Interactions
-**Don't wait for organic connections. Design them.**
-- Structured ice-breakers (e.g., "Introduce yourself: background + main role")
-- Challenges (e.g., "This week: create your first map, share in #creations")
-- Shared experiences (e.g., "Community boss fight: everyone raids this NPC at the same time")
-- **Action:** Design 5-10 structured first interactions. Assign community moderators to facilitate. New members hit these by Week 1.
+### 5. Manufacture the first interactions
+**Don't wait for organic connection. Design it.**
+- Structured ice-breakers: "Introduce yourself — background plus what you're working on"
+- Challenges: "This week, make your first map and post it"
+- Shared experiences: everyone does the same hard thing at the same time
+- **Action:** design 5-10 structured first interactions. Assign moderators to run them. Every new member hits them in week one.
 
-#### 6. The Most Essential Factor is YOU (The Founder)
-**Your involvement is irreplaceable, especially early.** Be present, responsive, authentic.
-- Respond to community feedback (even if you don't implement it)
-- Show up in voice chat or Discord
-- Make decisions transparently (e.g., "Here's why we're not adding that feature")
-- Share your roadmap; let community shape it (listening ≠ following; you decide)
-- **Action:** Spend 3-5 hours/week in community (Discord, forums, Reddit, events) for first 6 months. Then delegate to community lead, but stay visible.
+### 6. The most essential factor is you
+**The founder's presence is irreplaceable, especially early.**
+- Respond to feedback even when you won't act on it
+- Show up in the chat, in voice, on stream
+- Make decisions transparently: "Here's why we're not adding that"
+- Share the roadmap and let the community shape it — listening is not the same as obeying
+- **Action:** 3-5 hours a week in the community for the first six months. Then delegate to a community lead, but stay visible.
 
----
+## Community as a retention moat
 
-## Community as Retention Moat
-
-### Identity Over Usage
-**Goal: Move from "I use X" to "I AM an X player"**
-
-**Progression:**
-1. **New user:** "I'm trying this game"
-2. **Active user:** "I play this game regularly"
+### Identity over usage
+The progression from user to identity:
+1. **New user:** "I'm trying this"
+2. **Active user:** "I use this regularly"
 3. **Community member:** "I'm part of this community"
-4. **Identity:** "I AM a [game] player" (churn risk: <5% annually)
+4. **Identity:** "I AM a [X]" — annual churn risk under 5%
 
-**How to drive identity:**
-- Create cosmetics/badges that signal community status (e.g., "Founding Member", "Tournament Champion")
-- Celebrate community creators (art, guides, tournaments, streamers)
-- Tell stories of community members (spotlights, interviews)
-- Give community exclusive access (early features, balance input, design meetings)
-- Build competition/leaderboards that reward skillful community members
+**How to drive it:**
+- Badges and cosmetics that signal status: Founding Member, Tournament Champion
+- Celebrate creators — art, guides, tournaments, streams
+- Tell members' stories: spotlights, interviews
+- Give the community exclusive access: early features, balance input, design conversations
+- Build leaderboards and competition that reward skill, not spend
 
-**Case:** Riot's League of Legends: Players say "I'm a League player" (identity), not "I play an MOBA" (usage). 8M peak concurrent, 100M World Championship viewers. Esports + community = moat.
+**Case:** League players say "I'm a League player" — an identity, not a usage statement. 8M peak concurrent, 100M+ championship viewers. Esports plus community equals moat.
 
-### Listening Without Following
-**Trap:** Do everything users suggest. You'll build a Frankenstein product.
+### Listening without following
+**The trap:** build everything users ask for and ship a Frankenstein.
 
-**Right approach:**
-- **Gather feedback:** Reddit, Discord, surveys, forums (constant listening)
-- **Identify patterns:** Which complaints appear 10+ times? Which feature requests?
-- **Synthesis:** Understand the underlying problem. Don't implement the solution they suggest
-- **Decide:** Make the call (yes, no, or better version) and explain why transparently
-- **Case:** Riot's balance changes. Community complains about champion X. Riot doesn't nerf champion; they understand it's matchup Y. Fix matchup Y differently. Community respects the reasoning.
+**The method:**
+- **Collect** constantly — forums, surveys, support tickets, social
+- **Find patterns** — which complaint appears ten times, not once loudly
+- **Synthesize** — understand the underlying problem; don't implement the proposed solution
+- **Decide** and explain the reasoning publicly
 
----
+**Case:** Riot's balance work. The community demands a nerf to champion X. Riot determines the real problem is matchup Y and fixes that instead — then explains why. The community respects the reasoning even when it isn't what they asked for.
 
-## Key Case Studies
+## Key case studies
 
-### Riot Games (Masterclass in Community)
-- **Start:** Found DOTA players on PlayDota forums
-- **Founding:** Hired Steve Feak (DOTA legend); set aspirational culture
-- **Build:** Built Tribunal (player moderation), Boards (official forums), Deep in-game lore
-- **Scale:** Esports ($20B+ revenue, 100M+ esports viewers, 8M peak concurrent)
-- **Result:** Identity-driven retention; churn rates <5% for engaged players
+### Riot Games
+- **Start:** found DOTA players where they already were
+- **Founding:** hired a community legend and let him set the culture
+- **Build:** Tribunal (player moderation), official boards, deep in-game lore
+- **Scale:** esports, 100M+ viewers, 8M peak concurrent
+- **Result:** identity-driven retention; churn under 5% for engaged players
 
-### ClickFunnels Community (FunnelHacker)
-- **Trigger:** Russell Brunson's email list + Facebook group (leveraged existing audience)
-- **Rituals:** FunnelHacker TWO (annual summit), monthly challenges, founder daily involvement
-- **Identity:** "I'm a FunnelHacker" (business builder mindset)
-- **Result:** 95% YoY retention; community became product moat + revenue driver (membership + upsells)
+### ClickFunnels (FunnelHacker)
+- **Trigger:** leveraged an existing email list and group rather than starting cold
+- **Rituals:** annual summit, monthly challenges, daily founder involvement
+- **Identity:** "I'm a FunnelHacker" — a business-builder identity, not a software user
+- **Result:** 95% YoY retention; the community became both moat and revenue line
 
-### StartupGrind (Derek Andersen / EY model)
-- **Leverage:** Existing entrepreneur communities (found them, didn't build from scratch)
-- **In-person:** Local chapters + annual summit (HUGE leverage)
-- **Identity:** "I'm a startup founder in my city" (geographic + entrepreneurial identity)
-- **Result:** 50+ chapters, 100K+ members, network effects = moat
-
----
+### Startup Grind
+- **Leverage:** found existing entrepreneur communities instead of building one
+- **In-person:** local chapters plus an annual summit
+- **Identity:** "I'm a founder in my city" — geographic plus professional
+- **Result:** 50+ chapters, 100K+ members, network effects as moat
 
 ## Workflows
 
-### 1. Community Audit
-Understand the landscape:
-- **Where do users already gather?** (Reddit, Discord, Twitter, Twitch, forums, in-person?)
-- **What communities exist?** (Official vs unofficial, fan-run, competitor communities)
-- **Sentiment analysis:** What are they saying? Happy? Frustrated? Toxic?
-- **Influencers:** Who are the respected voices in each community?
-- **Gaps:** What communities are underserved? Lonely players? Competitive players? Story nerds?
+### 1. Community audit
+- Where do your users already gather? Which platforms, which specific spaces?
+- What communities exist — official, unofficial, fan-run, competitor-adjacent?
+- What's the sentiment: happy, frustrated, toxic, dormant?
+- Who are the respected voices in each space?
+- What's underserved — new players, competitive players, creators, lore obsessives?
 
-Output: Community map (platforms, communities, member counts, sentiment) + top 20 influencers/moderators to recruit.
+**Output:** `community-map.md` plus a paste-ready TSV block — `Platform`, `Space`, `Members`, `Sentiment`, `Key voices`, `Opportunity` — and a shortlist of 20 people to recruit.
 
-### 2. Launch Plan (Using CMX 6 Principles)
-Design community launch:
-- **Phase 0 (Identify):** Scout existing communities, identify 50 founding members
-- **Phase 1 (Recruit):** Personal outreach to founding members (1:1 calls, explain vision)
-- **Phase 2 (Launch):** Go live with founding members. Ice-breaker event. Clarity on values (who we are, who we're not)
-- **Phase 3 (Activate):** Structured first interactions (challenges, tournaments, spotlights)
-- **Phase 4 (Grow):** In-person events, live experiences, identity-building rituals
+### 2. Launch plan (CMX 6)
+- **Phase 0 — identify:** scout existing communities, name 50 founding members
+- **Phase 1 — recruit:** personal outreach, one at a time, explaining the vision
+- **Phase 2 — launch:** go live with the founding group. Ice-breaker event. State the values, including who you're not for.
+- **Phase 3 — activate:** structured first interactions, challenges, spotlights
+- **Phase 4 — grow:** live events and identity rituals
 
-Assign: Community Lead (can be founder or hire), Moderators (3-5 recruited from founding members), Content producer (spotlights, guides, story).
+Assign roles: community lead (founder at first), 3-5 moderators recruited from the founding members, and someone producing spotlights and guides.
 
-Output: 12-week community launch roadmap + roles + recruiting targets.
+**Output:** `community-launch.md` — 12-week roadmap with roles and recruiting targets.
 
-### 3. Engagement Calendar
-Monthly community touchpoints:
-- **Weekly:** Discord activity (Thursday AMAs, Friday tournaments)
-- **Bi-weekly:** Community spotlight (interview a creator, celebrate their work)
-- **Monthly:** Challenge (e.g., "Create a map", "Design a cosmetic concept", "Share a clutch play")
-- **Quarterly:** Regional meetups or online tournament
-- **Annually:** Community summit or convention appearance
+### 3. Engagement calendar
+- **Weekly:** a recurring live moment — AMA, tournament night, office hours
+- **Bi-weekly:** community spotlight on a creator
+- **Monthly:** a challenge with a real prize
+- **Quarterly:** meetup or online tournament
+- **Annually:** a summit or a convention presence
 
-Output: Community engagement calendar + content production schedule.
+**Output:** `community-calendar.tsv` plus a paste-ready TSV block.
 
-### 4. Feedback Loop (Systematic)
-Gather and prioritize user input:
-- **Collect:** Reddit, Discord, surveys, forums, support tickets (tag all suggestions)
-- **Aggregate:** Count suggestions by category (balance, features, cosmetics, story, toxicity)
-- **Analyze:** What's the underlying problem? (Don't implement suggestion; fix root cause)
-- **Decide:** Go/no-go + reasoning (transparent communication back to community)
-- **Implement:** Ship with community credit (tag the person who reported the issue)
+### 4. Feedback loop
+- **Collect** every suggestion, tagged by source
+- **Aggregate** by category: balance, features, cosmetics, story, toxicity
+- **Analyze** the underlying problem, not the requested fix
+- **Decide** with a public go/no-go and the reasoning
+- **Ship** with credit to whoever surfaced it
 
-**Cadence:** Weekly input review, monthly prioritization, quarterly deep feedback session (fireside chat with community).
+**Output:** `feedback-log.tsv` plus a monthly decision log — every decision with the reasoning attached.
 
-Output: Feedback tracker (Google Sheets) + monthly decision log + community roundtable meeting notes.
+### 5. Community health score
+Weekly:
+- **Engagement:** % of members posting or commenting (target >20%)
+- **Growth:** new members per week, and the trend
+- **Sentiment:** positive/neutral/negative mix
+- **Identity:** count of "I AM a..." language versus transactional language
+- **Toxicity:** reports and bans (target <1% of members)
+- **Creator health:** are top creators still active? Are new ones emerging?
+- **Retention:** % of the cohort from three months ago still active (target >60%)
 
-### 5. Community Health Score
-Weekly tracking:
-- **Engagement:** % of members posting/commenting per week (Target: >20%)
-- **Growth:** New members joining per week (Trend: accelerating or flat?)
-- **Sentiment:** % positive/neutral/negative mentions (Track in Discord, Reddit, forums)
-- **Identity:** Mentions of "I AM a [community]" vs transactional language (Count weekly)
-- **Toxicity:** Reports/bans per week (Target: <1% of members)
-- **Influencer health:** Are top creators still active? New creators emerging?
-- **Retention:** What % of cohort from 3 months ago still active? (Target: >60%)
+Red flags: flat growth, a sentiment drop, top creators going quiet, rising toxicity.
 
-Red flags: Flat growth, negative sentiment spike, top creators leaving, rise in toxicity.
+**Output:** `community-health.tsv` plus a paste-ready TSV row per week, with red flags called out.
 
-Output: Weekly health scorecard + alerts on red flags.
+### 6. Identity-building initiatives
+- **Badges and cosmetics:** founding member, champion, top creator, moderator
+- **Spotlights:** feature members' work in official channels
+- **Competition:** a real pathway from local to national to championship
+- **Creator program:** pay the top creators. Status plus income equals stickiness.
+- **Lore:** name things after community members. It costs nothing and it lasts.
+- **Governance:** give the community a real voice — a balance council, feature voting, roadmap input
 
-### 6. Identity-Building Initiatives
-Move users from "I use X" to "I AM an X player":
-- **Cosmetics/Badges:** Founding member, tournament champion, top creator, moderator (visible status)
-- **Spotlights:** Feature community members (art, guides, clips, streamers) in official channels
-- **Esports:** Build competitive pathways (regional qualifiers → nationals → worlds)
-- **Creator Program:** Pay top streamers/guide writers (status + income = stickiness)
-- **Lore Depth:** Tell stories that celebrate community (NPCs named after top players, story references)
-- **Governance:** Give community real voice (balance council, feature voting, road-map feedback)
-
-Output: Identity-building roadmap (cosmetics, spotlights, esports, creator tier levels).
-
----
-
-## Scheduled Routines
-- **Weekly (Monday):** Community health score review, engagement trends, toxicity check
-- **Monthly (First Friday):** Feedback loop review (suggestions → decisions made), spotlights published
-- **Quarterly:** Community health report + in-person event planning, identity metrics check (% saying "I AM")
-
----
+**Output:** `identity-roadmap.md`.
 
 ## Outputs
-- **Google Sheets:** Community audit map, founding members recruiting tracker, engagement calendar, feedback tracker, health scorecard
-- **Email:** Monthly community health report + key decisions made, quarterly spotlight roundup, annual community strategy memo
-- **Discord:** Weekly engagement alerts (milestones hit, new creators emerging), monthly feedback summary, #announcements channel for decisions + reasoning
 
----
+Markdown and TSV files in the user's project folder, plus paste-ready TSV blocks for Google Sheets. Nothing is posted or sent for you.
 
-## Integration with Other Pillars
-- **LOVE Machine:** Community bonds = lowest churn. Leverage community events for retention
-- **Reach:** Community as acquisition moat (word-of-mouth, ambassadors, esports visibility)
-- **Prediction:** A/B test community events, spotlights, identity initiatives using hypothesis → measure → change
-- **Revenue:** Community creators + esports can become $M+ revenue streams (ClickFunnels, Riot Games esports model)
+## Suggested cadence
+
+- **Weekly:** health score, engagement trend, toxicity check.
+- **Monthly:** feedback loop review — what was suggested, what was decided, what shipped. Publish the spotlights.
+- **Quarterly:** health report, event planning, and the identity metric — is "I AM" language growing?
+
+Run these yourself, or wire the weekly health check into a Claude Code scheduled task.
+
+## Integration with other pillars
+- **Retention:** community bonds produce the lowest churn of any lever (`/retention-love-machine`)
+- **Reach:** community is an acquisition moat — word of mouth, ambassadors, visibility (`/reach-funnel-builder`)
+- **Prediction:** test events, spotlights, and identity initiatives as hypotheses (`/prediction-hypothesis-engine`)
+- **Revenue:** creators and competitive play can become revenue lines in their own right

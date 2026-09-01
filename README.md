@@ -8,11 +8,11 @@ I'm Ludovic Bodin. I wrote *Atomic Scaling: How Small Teams Create Huge Growth* 
 
 The **3P3R Method®** is that framework. Six pillars. Three for organizational capability (People, Prediction, Playbook). Three for growth (Revenue, Reach, Retention). Every scaling decision maps to one of them.
 
-**Atomic Scaling OS** turns the 3P3R Method® into 15 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — on scheduled loops, surfacing only the decisions that need a human.
+**Atomic Scaling OS** turns the 3P3R Method® into 14 Claude agents that run your growth operating system. They monitor culture health, run experiments, optimize unit economics, build funnels, and reduce churn — you invoke them as slash commands (on your cadence, or on Claude Code scheduled tasks), and they surface the decisions that need a human.
 
 This is a **Human-Assisted Autonomous Organization (HAAO)**. The agents do the work. You make the calls.
 
-Fifteen specialists, all slash commands, all Markdown, all free, MIT license.
+Fourteen specialists, all slash commands, all Markdown, all free, MIT license.
 
 Fork it. Adapt it. Scale with it.
 
@@ -38,7 +38,7 @@ Stop there. You'll know if this is for you.
 
 ## Install — 30 seconds
 
-**Requirements:** [Claude Code](https://docs.claude.com/en/docs/claude-code) (v1.0.33+) and Git.
+**Requirements:** [Claude Code](https://docs.claude.com/en/docs/claude-code) and Git.
 
 > Want the full walkthrough — including how to use the skills in Claude.ai web chat, trigger phrases, troubleshooting, and team setup? See **[INSTALL.md](INSTALL.md)**.
 
@@ -53,7 +53,7 @@ Open Claude Code and run:
 Then install the plugin:
 
 ```
-/plugin install atomic-scaling-os@kalibrio/atomic-scaling-os
+/plugin install atomic-scaling-os@atomic-scaling-os
 ```
 
 ### Option B: Manual install
@@ -61,21 +61,18 @@ Then install the plugin:
 Run this in your **terminal** (not inside Claude Code):
 
 ```bash
-git clone https://github.com/kalibrio/atomic-scaling-os.git ~/.claude/plugins/atomic-scaling-os
+git clone https://github.com/kalibrio/atomic-scaling-os.git
+cp -R atomic-scaling-os/skills/* ~/.claude/skills/
 ```
 
-Then open Claude Code and reload plugins:
-
-```
-/reload-plugins
-```
+Then restart Claude Code (or start a new session) — the skills load from `~/.claude/skills/`.
 
 ### Share with your team (optional)
 
 Add Atomic Scaling OS to your project repo so your whole team gets it:
 
 ```bash
-cp -Rf ~/.claude/plugins/atomic-scaling-os .claude/plugins/atomic-scaling-os && rm -rf .claude/plugins/atomic-scaling-os/.git
+git clone https://github.com/kalibrio/atomic-scaling-os.git /tmp/atomic-scaling-os && mkdir -p .claude/skills && cp -R /tmp/atomic-scaling-os/skills/* .claude/skills/ && rm -rf /tmp/atomic-scaling-os
 ```
 
 Everything lives inside `.claude/`. Nothing touches your PATH or runs in the background.
@@ -86,21 +83,22 @@ Atomic Scaling OS is a process, not a collection of tools. The agents run in the
 
 **Define → Measure → Iterate → Grow → Retain → Reflect**
 
-Each agent feeds into the next. `/playbook-mission-designer` defines the vision that `/playbook-rhythm-keeper` tracks and `/playbook-postsuccess` expands. `/prediction-hypothesis-engine` runs experiments that `/prediction-forecast-analyst` calibrates and `/prediction-premortem` stress-tests. `/reach-funnel-builder` acquires users that `/retention-love-machine` keeps. Nothing falls through the cracks because every agent knows what came before it.
+Each agent feeds into the next. `/playbook-mission-designer` defines the vision that `/playbook-rhythm-keeper` tracks and `/playbook-postsuccess` expands. `/prediction-hypothesis-engine` runs experiments that `/prediction-forecast-analyst` calibrates and `/prediction-premortem` stress-tests. `/reach-funnel-builder` acquires users that `/retention-love-machine` keeps. Each agent writes its output to files in your project folder, so the next one picks up where it left off.
 
-| Frequency | What happens |
+A suggested cadence — run each agent yourself, or put it on a Claude Code scheduled task:
+
+| Frequency | What you run |
 |-----------|-------------|
-| **Daily** | Experiment scan, LTV/CAC monitoring |
-| **Weekly** | Culture pulse, scorecards, metrics digest, growth tracking, retention check, iteration review |
-| **Bi-weekly** | Funnel conversion audit, editorial calendar review |
-| **Monthly** | Segment analysis, calibration scoring, community health, revenue deep review |
-| **Quarterly** | Org design review, Merlin Exercise (5yr→1yr→30day), community health report |
+| **Weekly** | `/playbook-rhythm-keeper` scorecard · `/people-culture-pulse` · `/prediction-hypothesis-engine` experiment review |
+| **Monthly** | `/revenue-optimizer` LTV/CAC audit · `/reach-funnel-builder` channel review · `/retention-love-machine` check |
+| **Quarterly** | `/people-team-architect` org review · `/playbook-mission-designer` Merlin Exercise · `/retention-community-engine` health report |
+| **Before any big bet** | `/prediction-premortem` (how does this fail?) · `/playbook-postsuccess` (what does the 100x version look like?) |
 
 You only step in for strategic decisions. The agents surface choices — you make the calls.
 
-## The 15 agents
+## The 14 agents
 
-Built on the **3P3R Framework** — six pillars, two specialist agents each (plus a third in People for talent pipeline, a third in Prediction to stress-test high-stakes decisions, and a third in Playbook to expand the strategic possibility space).
+Built on the **3P3R Framework** — six pillars, fourteen specialist agents.
 
 ### People — Stay small, scale output
 
@@ -137,8 +135,7 @@ Built on the **3P3R Framework** — six pillars, two specialist agents each (plu
 
 | Skill | Your specialist | What they do |
 |-------|----------------|-------------|
-| `/reach-funnel-builder` | Growth Architect | Build the Peak Sales Machine — Dream 100 partnerships, OBE traffic model (Own/Buy/Earn), follow-up funnels, anchoring. Systematic acquisition, not random acts of marketing. |
-| `/reach-growth-tracker` | Acquisition Analyst | Track CAC by channel, run 12-week growth sprints, manage acquisition experiments. Know exactly what's working and what to kill. |
+| `/reach-funnel-builder` | Growth Architect | Build the Peak Sales Machine — Dream 100 partnerships, OBE traffic model (Own/Buy/Earn), follow-up funnels, CAC by channel, channel scorecards, 12-week growth sprints. Systematic acquisition, not random acts of marketing. |
 
 ### Retention — More important than reach or revenue
 
@@ -198,21 +195,15 @@ Agent: [pulls your current metrics]
       The gap is too large — Dolphins need a stepping stone.
 ```
 
-Six pillars. Fifteen agents. One operating system for scaling.
+Six pillars. Fourteen agents. One operating system for scaling.
 
-## Masterclass resources
+## Go deeper
 
-Each pillar includes supplementary materials from the **Atomic Scaling Masterclass** — videos, case studies, Canva templates, Google Sheets tools, interactive exercises, and self-assessments.
-
-Take the free assessment at **[AtomicScaling.com](https://atomicscaling.com)** to identify which pillars need attention first.
+The frameworks behind every agent come from **[Atomic Scaling: How Small Teams Create Huge Growth](https://atomicscaling.com)** — with the full case studies from Supercell, Valve, ClickFunnels, Riot, and more.
 
 ## Outputs
 
-All agents output to:
-
-- **Email digest** — daily/weekly summaries of decisions needed
-- **Discord** — pillar-specific channels for real-time alerts
-- **Google Sheets** — dashboards for metrics, scorecards, and trackers
+Every agent writes real files into your project folder — markdown reports, scorecards, and paste-ready TSV blocks for Google Sheets. No integrations to configure; the files are the dashboard.
 
 ## License
 

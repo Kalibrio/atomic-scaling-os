@@ -1,29 +1,13 @@
 ---
 name: people-d100-talents
-type: skill
-description: Use this skill whenever the user shares a LinkedIn profile URL (single or batch) in any talent, recruiting, hiring, or Dream-100 context. Output is always a tab-separated row (or rows) ready to paste into the user's D100 Talents tracking sheet, in the exact 13-column order. Trigger even when the user does not explicitly say "add to sheet" — any LinkedIn URL shared in a hiring or talent pipeline conversation should activate this skill.
-triggers:
-  - "linkedin.com/in"
-  - "Dream 100"
-  - "D100"
-  - "talent pipeline"
-  - "recruiting"
-  - "hiring pipeline"
-  - "/people-d100-talents"
-author: Ludovic Bodin
-version: 1.0
-pillar: People
-slash_command: /people-d100-talents
-role: Talent Pipeline Manager
-principle: Stay small, scale output
-license: MIT
+description: "Atomic Scaling PEOPLE agent for the Dream-100 talent pipeline — the hundred PEOPLE you would want to hire, advise with, or partner with personally. Use whenever the user shares a LinkedIn profile URL (single or batch) in any talent, recruiting, hiring, or Dream-100 context. Output is always a tab-separated row (or rows) ready to paste into the user's D100 Talents sheet, in the exact 13-column order. Trigger even when the user does not say 'add to sheet' — any LinkedIn URL dropped into a hiring or talent conversation activates this skill. TRIGGERS: 'linkedin.com/in', 'Dream 100', 'D100', 'talent pipeline', 'add to my recruiting list', 'who should we hire', 'candidate row'. Do NOT trigger for the Dream 100 of distribution partners and channels — that lives in /reach-funnel-builder — or for evaluating a specific candidate's fit and comp (/people-team-architect)."
 ---
 
 # D100 (Talents) — The Dream-100 Talent Pipeline Agent
 
 Part of the Atomic Scaling OS — Pillar 1: People.
 
-The Dream-100 (D100) is the working list of the hundred people who, if any one of them joined or partnered with you, would change the trajectory of the company. This agent maintains the funnel from LinkedIn discovery through onboarding.
+The Dream-100 (D100) is the working list of the hundred people who, if any one of them joined you, would change the trajectory of the company. This is the *talent* Dream 100 — humans you want inside the tent. The other Dream 100, the list of partners and channels who already own your audience, lives in `/reach-funnel-builder`. Same name, different list, don't mix them. This agent maintains the funnel from LinkedIn discovery through onboarding.
 
 ## What this agent does
 

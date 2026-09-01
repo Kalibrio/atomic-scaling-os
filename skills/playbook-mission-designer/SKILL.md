@@ -1,144 +1,114 @@
-# Atomic Scaling: PLAYBOOK Mission Designer
+---
+name: playbook-mission-designer
+description: "Atomic Scaling PLAYBOOK agent for strategic clarity. Defines mission, user, and method (MUM), runs the Merlin backcast from a 5-year vision down to a 30-day sprint, scores the target user on BRAW, and forces the NOT-doing list that makes focus real. Use when the user is writing or rewriting a mission, deciding who they actually serve, setting a multi-year vision, or trying to figure out what to say no to. TRIGGERS: 'mission statement', 'what is our strategy', 'who are we serving', '5-year vision', 'moonshot', '10x not 10%', 'BRAW', 'Merlin exercise', 'what should we say no to', 'focus audit', 'we are doing too many things'. Do NOT trigger for weekly or quarterly operating cadence and OKRs (that's /playbook-rhythm-keeper), or for stress-testing a plan already written (/prediction-premortem)."
+---
 
-## Agent Name
-`/playbook-mission-designer`
+# playbook-mission-designer
 
-## Purpose
-Define mission, users, and method. Create strategic clarity for autonomous scaling. Owner makes decisions; agent orchestrates frameworks, backcasts strategy, and surfaces focus trade-offs.
+Part of the Atomic Scaling OS — Pillar 2: Playbook.
 
-## Trigger Phrases
-- "mission statement"
-- "business strategy" / "strategic plan"
-- "moonshot thinking" / "10x"
-- "user definition" / "who are we serving"
-- "BRAW framework"
-- "Merlin Exercise"
-- "vision setting" / "5-year vision"
-- "focus audit" / "what are we saying no to"
-- "/playbook-mission-designer"
+Define mission, users, and method. Strategic clarity is what lets a small team act autonomously without checking in. You make the decisions; this agent runs the frameworks, backcasts the strategy, and surfaces the trade-offs you're avoiding.
 
-## Core Frameworks
+## Core frameworks
 
-### MUM Model (Mission/User/Method)
-Define three elements:
-- **Mission**: One sentence. Why do you exist? (impact on world, not revenue)
-- **User**: Specific avatar. Demographics, pain point, aspiration.
-- **Method**: How you solve for that user. Unique approach.
+### MUM (Mission / User / Method)
+- **Mission:** one sentence. Why do you exist? Impact on the world, not revenue.
+- **User:** a specific avatar. Demographics, pain, aspiration.
+- **Method:** how you solve it for that user, and why your way is different.
 
-Outcome: One-page strategic clarity. Aligns team. Guides feature prioritization.
+Output: one page of strategic clarity that aligns the team and settles feature arguments.
 
-### Moonshot Thinking (10x > 10%)
-- 10x = radical rethinking (e.g., Angry Birds: 52 failed games → slingshot mechanic)
-- 10% = optimization (faster horses, more polish)
-- Question: What would change if we aimed for 10x user value instead of 10% improvement?
+### Moonshot thinking (10x beats 10%)
+- 10x means rethinking the problem. Rovio shipped 52 failed games before the slingshot mechanic.
+- 10% means polishing what exists. Faster horses.
+- The question to sit with: what would change if we aimed for 10x user value instead of 10% improvement?
 
-### Merlin Exercise (5yr→1yr→30day Backwards Planning)
-1. **5-year vision**: Where do you want to be? (market, users, revenue, impact)
-2. **1-year milestone**: What must be true in 12 months to hit 5yr?
-3. **30-day sprint**: What must be done this month to stay on path?
-4. Quarterly check: Are we progressing toward milestones?
+### The Merlin exercise (backwards planning)
+1. **5 years out:** where do you want to be? Market, users, revenue, impact.
+2. **12 months out:** what must be true a year from now to make the 5-year picture reachable?
+3. **30 days out:** what must be done this month to stay on that path?
+4. **Quarterly check:** are we actually converging on the milestone, or drifting?
 
-### BRAW Framework (User Definition)
-- **Big**: How big is the market you're addressing?
-- **Relate**: Can you deeply relate to this user's pain?
-- **Access**: Do you have distribution to reach them?
-- **Want**: Do they desperately want this?
-All four yes = product-market fit potential.
+### BRAW (user definition)
+- **Big:** is the market big enough to matter?
+- **Relate:** can you deeply relate to this user's pain?
+- **Access:** do you have distribution to reach them?
+- **Want:** do they desperately want this?
 
-### Finite vs Infinite Games
-- **Finite**: Business as tactic (beat competitors, exit, maximize profit)
-- **Infinite**: Business as vision (build for 100 years, create culture, serve users infinitely)
-Team plays differently in infinite games (less burnout, more resilience).
+All four yes is a shot at product-market fit. Any one below 8/10 means pivot the user or reframe the product.
 
-### Focus & NOT-Doing List
-- Say yes to core mission only
-- NOT-doing list = more important than to-do list
-- Example: Rovio focused ONLY on mobile after 52 games; rejected console ports, licensing early
+### Finite vs infinite games
+- **Finite:** business as tactic — beat competitors, exit, maximize profit.
+- **Infinite:** business as vision — build for a hundred years, create culture, serve users indefinitely.
+
+Teams play differently in infinite games: less burnout, more resilience, better decisions under pressure.
+
+### Focus and the NOT-doing list
+- Say yes only to the core mission.
+- The NOT-doing list matters more than the to-do list.
+- Rovio focused exclusively on mobile after 52 games and rejected console ports and early licensing.
 
 ## Workflows
 
-### Workflow 1: MUM Definition Sprint (60 min)
-1. **Mission**: Draft one-sentence reason for existing. Is it user-centric or ego-centric?
-2. **User**: Who is the primary avatar? Demographic + psychographic + pain point.
-3. **Method**: What's unique about your approach vs competitors?
-4. **Output**: One-page MUM doc. Share with team. Iterate.
+### 1. MUM definition sprint (60 min)
+1. Draft the one-sentence reason you exist. Is it user-centric or ego-centric? Be honest.
+2. Name the primary avatar: demographic, psychographic, pain.
+3. State what is genuinely unique about your method versus the obvious alternative.
+4. **Output:** `mum.md` — one page. Share it with the team and iterate.
 
-### Workflow 2: Merlin Exercise (90 min)
-1. **5-year backcast**: What does success look like in 2031?
-   - Market size? User count? Revenue? Impact metric?
-2. **1-year milestone**: What must be true March 2027 to hit 2031?
-3. **30-day sprint**: What happens by April 2026?
-4. **Quarterly gates**: When do we assess? How do we know we're on track?
-5. **Output**: Merlin roadmap. Share with investors/team.
+### 2. Merlin backcast (90 min)
+1. **5 years out:** what does success look like? Market size, user count, revenue, one impact metric.
+2. **18 months out:** what must be true then for the 5-year picture to survive contact with reality?
+3. **30 days out:** what ships this month?
+4. **Gates:** when do we assess, and what number tells us we're off track?
+5. **Output:** `merlin-roadmap.md` plus a paste-ready TSV block with columns `Horizon`, `Milestone`, `Metric`, `Owner`, `Check date`.
 
-### Workflow 3: BRAW User Definition
-1. **Big**: TAM/SAM/SOM. Is the market large enough to matter?
-2. **Relate**: Tell the story of your personal connection to this pain.
-3. **Access**: List 3 distribution channels to reach these users.
-4. **Want**: Evidence: surveys, tears, pre-sales, competitor usage.
-5. **Output**: BRAW scorecard. If any <8/10, pivot or reframe user.
+### 3. BRAW user definition
+1. **Big:** TAM/SAM/SOM. Is it large enough to be worth a decade?
+2. **Relate:** tell the story of your personal connection to this pain.
+3. **Access:** name three real distribution channels to reach these people.
+4. **Want:** evidence — surveys, pre-sales, tears, what they use today instead.
+5. **Output:** `braw-scorecard.md`. Any dimension under 8/10 means pivot or reframe the user.
 
-### Workflow 4: Focus Audit (Strategic Trade-offs)
-1. **Current priorities**: List top 5 things you're building/doing.
-2. **NOT-doing list**: What are you intentionally NOT doing?
-3. **Trade-off analysis**: For each yes, what's the hidden no?
-4. **Brand dilution check**: Does each priority reinforce core mission?
-5. **Output**: Refined focus statement. Team alignment survey.
+### 4. Focus audit
+1. List the top five things you're building or doing right now.
+2. List what you are deliberately NOT doing.
+3. For each yes, name the hidden no it costs you.
+4. Check each priority against the mission. Does it reinforce or dilute?
+5. **Output:** `focus.md` — a refined focus statement and an explicit NOT-doing list.
 
-### Workflow 5: BOS (Business Operating System) Design
-1. **Core operating principles**: 3-5 values that shape decisions.
-2. **Decision-making framework**: How do you evaluate new opportunities?
-3. **Communication rhythm**: Weekly meetings, monthly reviews, annual strategy.
-4. **Culture anchors**: What behavior do you reward/punish?
-5. **Output**: BOS playbook doc. Living document, updated quarterly.
+### 5. BOS (Business Operating System) design
+1. Three to five operating principles that actually shape decisions.
+2. The decision framework: how do you evaluate a new opportunity?
+3. The communication rhythm: weekly, monthly, annual.
+4. Culture anchors: what behavior gets rewarded, what gets corrected.
+5. **Output:** `bos.md` — a living document, revisited quarterly.
 
 ## Outputs
-- **Email**: Strategic clarity recap (mission, BRAW, Merlin milestones)
-- **Discord**: #strategy channel updates (focus audit, NOT-doing list, quarterly gates)
-- **Google Sheets**: Merlin roadmap (5yr/1yr/30day columns), BRAW scorecard, focus matrix
 
-## Scheduled Routine
-**Quarterly Strategic Review** (First Monday of Q)
-- Run Merlin Exercise checkpoint (are we on track to 1yr milestone?)
-- Audit focus/NOT-doing list (any mission drift?)
-- Update BOS if needed
-- Share with team
+Markdown files written into the user's project folder, plus paste-ready TSV blocks for anything that belongs in a sheet (Merlin roadmap, BRAW scorecard, focus matrix). Nothing is sent anywhere.
 
-## Case Study: Rovio (Angry Birds)
-- **Pre-mission**: 52 failed games. Burned through cash. Team drifting.
-- **Pivot**: Clear mission = "bring joy to casual mobile players." User = busy adult, 15 min play sessions.
-- **Method**: Physics-based, slingshot mechanic, destructible environments. Radical departure.
-- **100-year vision**: Build entertainment IP (not just a game).
-- **NOT-doing**: Rejected console ports, early licensing deals, online multiplayer. Stayed focused on mobile + licensing playbook.
-- **Result**: $1B+ revenue. 1B+ downloads. Still publishing 15 years later.
+## Suggested cadence
+
+Run the Merlin checkpoint and the focus audit once a quarter — first week is a natural slot. Ask three questions: are we on track to the 12-month milestone, has the NOT-doing list quietly grown teeth, and does the BOS still describe how we actually work? If you'd rather not remember, wire it into a Claude Code scheduled task.
+
+## Case study: Rovio (Angry Birds)
+
+- **Before:** 52 failed games, cash burning, team drifting.
+- **Mission:** bring joy to casual mobile players. User: a busy adult with 15-minute play sessions.
+- **Method:** physics, a slingshot, destructible environments. A genuine departure, not a variation.
+- **Long game:** build entertainment IP, not a game.
+- **NOT-doing:** rejected console ports, early licensing, online multiplayer. Stayed on mobile.
+- **Result:** $1B+ revenue, a billion downloads, still publishing 15 years later.
 
 ## References
-- Atomic Scaling, Chapter 3: Playbook
-- Slavingia skills repo (Skills as autonomous agents)
-- Garry Tan Gstack (Structured rhythms)
-- Merlin Exercise (Simon Wardley's backcasting)
 
-## Notes for Owner
-- Mission should inspire team, not just describe product
-- BRAW audit is humbling—answer honestly
-- Focus = saying no to good things for great things
-- Merlin Exercise is quarterly ritual, not one-time
-- BOS evolves; it's not set in stone
-# Atomic Scaling: PLAYBOOK Mission Designer
+- *Atomic Scaling*, Chapter 3: Playbook
 
-## Agent Name
-`/playbook-mission-designer`
+## Notes for the owner
 
-## Purpose
-Define mission, users, jwt method. Create strategic clarity for autonomous scaling. Owner makes decisions; agent orchestrates frameworks, backcasts strategy, and surfaces focus trade-offs.
-
-## Trigger Phrases
-- "mission statement"
-- "business strategy" / "strategic plan"
-- "moonshot thinking" / "10x"
-- "user definition" / "who are we serving"
-- "BRAW framework"
-- "Merlin Exercise"
-- "vision setting" / "5-year vision"
-- "focus audit" / "what are we saying no to"
-- "/playbook-mission-designer"
+- A mission should inspire the team, not describe the product.
+- The BRAW audit is humbling. Answer it honestly or don't run it.
+- Focus is saying no to good things so great things get oxygen.
+- Merlin is a quarterly ritual, not a one-time offsite.
+- The BOS evolves. If it hasn't changed in a year, nobody is reading it.

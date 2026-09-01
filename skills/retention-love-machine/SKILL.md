@@ -1,205 +1,149 @@
+---
+name: retention-love-machine
+description: "Atomic Scaling RETENTION agent — the LOVE Machine. Four pillars: Live product development on a fixed release cadence, Organized events on an 8-12 week editorial calendar, Very special sales segmented by Minnow/Dolphin/Whale and anchored small-to-big, and Engagement with a 5-step re-engagement sequence for dormant users. Audits all four, builds the calendar, designs the win-back sequence, and tracks D1/D7/D30 retention, churn, and reactivation. Use when the user is losing customers, planning content or LiveOps, designing offers, or trying to bring dormant users back. TRIGGERS: 'churn is too high', 'retention strategy', 'we're losing users', 'editorial calendar', 'content calendar', 'LiveOps plan', 'win back dormant users', 're-engagement sequence', 'special offer design', 'D30 retention', 'how do we keep customers'. Do NOT trigger for community building and identity (that's /retention-community-engine), for acquiring new customers (/reach-funnel-builder), or for team morale (/people-culture-pulse)."
+---
+
 # retention-love-machine
 
-**Name:** retention-love-machine
-**Pillar:** RETENTION (Ch6 — LOVE Machine, LiveOps, Editorial Calendar, Re-engagement, Product Retention DNA)
-**Type:** Claude Agent / Skill (CRITICAL — retention > reach > revenue)
-**Trigger:** Retention strategy, churn reduction, editorial calendar, LiveOps, content calendar, product release planning, re-engagement, dormant users, special offers, community events, or direct invocation `/retention-love-machine`
+Part of the Atomic Scaling OS — Pillar 5: Retention. The most important pillar, and the one everyone skips.
 
----
+Retention compounds. Churn kills growth quietly, months before it shows up in the revenue line. Revenue scales linearly with reach and exponentially with retention. Build retention into the product's DNA through four pillars: **L**ive product development, **O**rganized events, **V**ery special sales, and **E**ngagement loops.
 
-## Purpose
-Implement the LOVE Machine — the most critical pillar of sustainable scaling. Retention compounds. Churn kills growth. Build product/community retention into your DNA via four pillars: Live product development, Organized events, Very special sales, and Engagement/re-engagement loops. Revenue scales linearly with reach, but exponentially with retention.
+## The LOVE Machine
 
----
-
-## Core Frameworks
-
-### The LOVE Machine (4 Pillars)
-
-#### L — Live Product Development
-**Ship continuously. Make retention part of your DNA.**
-- Don't overhaul product based on feature requests (trap). Protect your core DNA.
-- Set a product release rhythm and stick to it (Smilegate/CrossFire model):
-  - Major features/maps: every 8 weeks
-  - Character/weapon balance: every 6 weeks
+### L — Live product development
+**Ship continuously. Make the cadence a promise.**
+- Don't overhaul the product on feature requests. Protect the core DNA.
+- Set a release rhythm and hold it (the CrossFire model):
+  - Major features and maps: every 8 weeks
+  - Balance changes: every 6 weeks
   - Cosmetic updates: every 3 weeks
-- Gather feedback loops (Reddit, Discord, surveys) but don't let them derail core vision
-- Player feedback identifies problems well; their solutions often suck. Synthesize, don't comply
-- Measure: D1/D7/D30 retention after each release
+- Gather feedback constantly, but don't let it steer. Users identify problems brilliantly and propose solutions badly. Synthesize, don't comply.
+- Measure D1/D7/D30 retention after every release.
 
-**Case:** Riot Games ships 2-week patches religiously. CrossFire new map every 8 weeks. EA's Andrew Wilson transformed $300M LiveOps division into $5.7B (70% of total revenue) by committing to cadence.
+**Case:** Riot ships two-week patches religiously. CrossFire drops a new map every 8 weeks. EA turned a $300M LiveOps division into $5.7B — around 70% of total revenue — by committing to cadence.
 
-#### O — Organized Events (Editorial Calendar)
-**The calendar is everything. Plan content releases + celebrations + seasonal events 8-12 weeks ahead.**
-- Start: Quarterly (4 events/year)
-- Scale: Monthly (12 events/year)
-- Mastery: Bi-weekly (26+ events/year)
-- Each event: New cosmetics, limited-time offers, story beats, challenges, rewards
+### O — Organized events (the editorial calendar)
+**The calendar is the product.** Plan releases, celebrations, and seasonal events 8-12 weeks ahead.
+- Start: quarterly (4 events/year)
+- Scale: monthly (12/year)
+- Mastery: bi-weekly (26+/year)
 
-**Editorial Calendar includes:**
-- Seasonal events (New Year, summer, holidays)
-- Product releases (new maps, characters, weapons)
-- Community celebrations (anniversaries, milestones, tournaments)
-- Special sales windows (pegged to real-world anchors)
+Each event carries new cosmetics, a limited-time offer, a story beat, and a challenge. Measure whether active users spike and churn drops — then hypothesis-test the timing via `/prediction-hypothesis-engine`.
 
-Measure impact per event: Do active users spike? Does churn drop? Use Prediction pillar to hypothesis-test event timing.
+**Include:** seasonal events, product releases, community celebrations and anniversaries, and sales windows pegged to real-world anchors.
 
-**Case:** Smilegate/CrossFire releases new map every 8 weeks like clockwork. Players plan their return dates around it. Riot's seasonal events drive 40%+ of annual revenue.
+**Case:** CrossFire's clockwork map cadence means players plan their return dates around it. Riot's seasonal events drive 40%+ of annual revenue.
 
-#### V — Very Special Sales & Offers (Segmented, Anchored)
-**Know your bestsellers. Segment. Anchor. Time strategically.**
+### V — Very special sales and offers
+**Know your bestsellers. Segment. Anchor. Time it.**
 
-**Segmentation (R=M+D+W from Revenue pillar):**
-- Minnows (65% of customers, 20% of revenue): $5-20 offers, frequent
-- Dolphins (30% of customers, 40% of revenue): $50-500 offers, monthly
-- Whales (5% of customers, 40% of revenue): $1000+ offers, exclusive access
+**Segmentation (R = M + D + W):**
+- **Minnows** — 65% of customers, 20% of revenue: $5-20 offers, frequent
+- **Dolphins** — 30% of customers, 40% of revenue: $50-500 offers, monthly
+- **Whales** — 5% of customers, 40% of revenue: $1000+ offers, exclusive
 
-**Anchoring (series of offers before the real one):**
-1. Small offer ($5-10): Warm up buying muscle
-2. Medium offer ($50-100): Show value progression
-3. Big offer ($500+): Now the whale feels this is reasonable
+**Anchoring — a series before the real one:**
+1. Small ($5-10): warm up the buying muscle
+2. Medium ($50-100): show the value progression
+3. Big ($500+): now this reads as reasonable
 
-**Timing & Messaging:**
-- Only 5% of audiences see most of your marketing (email is 5-10%, Facebook feed is <1%)
-- Use multiple channels: Email (highest conversion), SMS (highest urgency), Discord (highest engagement), push notifications (high-frequency re-engagement)
-- Peak buying days: Pre-weekend (Friday 5pm), holiday eves, end-of-month
-- Rhythm: Build to crescendos (offer → pause → event → pause → offer)
+**Timing and reach:** only a small fraction of your audience sees any given message — email lands with 5-10%, a social feed with under 1%. Use several channels: email converts best, SMS carries urgency, in-product notifications catch the habitual. Peak buying moments are pre-weekend, holiday eves, and end of month. Build to crescendos: offer → pause → event → pause → offer.
 
-**Case:** ClickFunnels 95% YoY retention via strategic upsell timing. Riot's seasonal cosmetics ($1000+ per player annually for whales).
+### E — Engagement and re-engagement
+**Define active. Identify dormant. Have a sequence ready.**
 
-#### E — Engagement & Re-engagement
-**Define active. Identify dormant. Build 5-step re-engagement sequence.**
+- **Active:** logged in at least once in the last 7 days (adjust to your product)
+- **Dormant:** no login in 30+ days
+- **Churn cause:** find the actual trigger. At Riot, being kicked from a clan predicted near-total churn within two weeks. Yours will be equally specific and equally invisible until you look.
 
-**Definitions:**
-- Active user: Logged in at least once in last 7 days (adjust per product)
-- Dormant user: Hasn't logged in >30 days
-- Churn cause: Identify why people leave (kicked from clan = 100% churn in 2 weeks per Riot)
+**The 5-step win-back sequence:**
+1. **Day 0 — soft check-in:** "We miss you. [New thing] is live."
+2. **Day 2 — targeted offer:** a bonus for returning this week. Scarcity.
+3. **Day 5 — different angle:** if the cosmetic didn't land, try the tournament or the challenge.
+4. **Day 10 — bigger incentive:** escalate. Premium currency, exclusive item, real deadline.
+5. **Day 15 — final attempt:** last message. No response means the hypothesis was wrong, not that they hate you.
 
-**The 5-Step Re-engagement Sequence (for dormant users):**
-1. **Soft check-in (Day 0):** "We miss you! [New map/event/feature] is live. Come back & see."
-2. **Targeted offer (Day 2):** Special cosmetic or bonus for returning this week (scarcity angle)
-3. **Different offer/event (Day 5):** Different angle (e.g., if cosmetic didn't work, try limited-time tournament or challenge)
-4. **Bigger incentive (Day 10):** Escalate (e.g., free premium currency, exclusive item, time-limited offer)
-5. **Final attempt (Day 15):** Last sequence. If no response, update hypothesis. New re-engagement strategy needed.
+After step 5, flag as churned and analyze the cohort. Bad onboarding? Bad matchmaking? Broken economy? That answer belongs in the product roadmap, not the marketing calendar.
 
-After no response at Step 5: Flag as churn. Analyze cohort. Was it bad onboarding? Bad matchmaking? Bad economy? Update product roadmap.
-
-**Metrics:**
-- D1/D7/D30 retention (% of Day 1 players active on Day 7, Day 30)
-- Churn rate (% active users who go dormant)
-- Reactivation rate (% of dormant users who return)
-- Magic number (e.g., Supercell: ~20% Day 30 retention = healthy)
-
-**Case:** Riot: "Don't let your customers quit" (Nicolo Laurent). 95% YoY retention target. Clan/social bonds = lowest churn.
-
----
+**Metrics:** D1/D7/D30 retention, churn rate, reactivation rate, and your magic number (Supercell's is roughly 20% D30 retention).
 
 ## Workflows
 
-### 1. LOVE Machine Audit
-Score each pillar 1-10 (quarterly):
-- **L (Live):** Are we shipping on cadence? Are D1/D7/D30 retention trending up/flat/down?
-- **O (Organized):** Do we have an 8-week editorial calendar? Are events moving churn metrics?
-- **V (Very Special):** Are we segmenting offers by customer tier? Anchoring working?
-- **E (Engagement):** Do we have a documented re-engagement sequence? Reactivation rate >10%?
+### 1. LOVE Machine audit
+Score each pillar 1-10:
+- **L:** are we shipping on cadence? Is D1/D7/D30 trending up, flat, or down?
+- **O:** do we have an 8-week calendar? Do events actually move churn?
+- **V:** are offers segmented by tier? Is the anchor sequence working?
+- **E:** is the re-engagement sequence written down? Is reactivation above 10%?
 
-Identify lowest pillar. Build 90-day improvement plan.
+Find the lowest pillar and build a 90-day plan for it. One pillar. Not four.
 
-Output: LOVE Machine scorecard + quarterly roadmap.
+**Output:** `love-audit.md` — scorecard plus the 90-day plan.
 
-### 2. Editorial Calendar Builder
-Create an 8-12 week content calendar:
-- Week 1-2: Season launch (major feature, cosmetics, story beat)
-- Week 3-4: Community tournament or challenge
-- Week 5-6: Holiday/seasonal event (or product update)
-- Week 7-8: Build anticipation for next season (teasers, hints)
+### 2. Editorial calendar builder
+Build 8-12 weeks:
+- Weeks 1-2: season launch — major feature, cosmetics, story beat
+- Weeks 3-4: community tournament or challenge
+- Weeks 5-6: seasonal event or product update
+- Weeks 7-8: build anticipation for what's next
 
-For each event:
-- What's new? (Map, character, cosmetic, story)
-- What's the offer? (Cosmetics bundle, battle pass, exclusive item)
-- Measurement: Target D7 retention lift? Expected revenue?
-- Go/no-go decision at midpoint
+Per event: what's new, what's the offer, what retention lift you expect, and the midpoint go/no-go.
 
-Output: Google Sheets editorial calendar + email alerts (weekly event prep, post-event analysis).
+**Output:** `editorial-calendar.tsv` plus a paste-ready TSV block — `Week`, `Event`, `What's new`, `Offer`, `Target D7 lift`, `Expected revenue`, `Go/no-go date`.
 
-### 3. Re-engagement Sequence Design
-Create the 5-step sequence:
-- Step 1 (Day 0): Copy angle, channel (email?), CTA
-- Step 2 (Day 2): Offer type, scarcity hook, copy
-- Step 3 (Day 5): Different angle (e.g., social proof, FOMO, event), copy
-- Step 4 (Day 10): Bigger incentive, urgency, copy
-- Step 5 (Day 15): Final attempt or hypothesis shift
+### 3. Re-engagement sequence design
+Write all five steps: copy angle, channel, offer, and CTA for each. Test on a cohort, measure reactivation per step, and cut the step that never converts.
 
-Test with a cohort. Measure reactivation rate. Iterate.
+**Output:** sequence template plus a tracker for reactivation rate by step.
 
-Output: 5-step sequence template + performance tracker (reactivation rate by step).
+### 4. LiveOps 8-week plan
+- Weeks 1-2: launch plus battle pass
+- Weeks 3-4: limited-time tournament
+- Weeks 5-6: seasonal event
+- Weeks 7-8: season close-out and teasers
 
-### 4. LiveOps Planning (8-Week Sprint)
-Plan the next 8 weeks:
-- **Week 1-2:** New map/character launch + cosmetics battle pass
-- **Week 3-4:** Limited-time tournament (esports tie-in or community bracket)
-- **Week 5-6:** Holiday event (cosmetics, story, exclusive rewards)
-- **Week 7-8:** Season close-out (final sales push, next season teasers)
+Per block: launch date, go-live requirements, what ships, and how you'll know it worked (DAU, new-player retention, revenue).
 
-For each:
-- Launch date, duration, go-live requirements
-- Cosmetics released (count, prices, exclusivity)
-- Events (tournament, challenges, story content)
-- Measurement: DAU (daily active users), new player retention, revenue
+**Output:** `liveops-8week.md` with a risk register.
 
-Output: 8-week LiveOps roadmap + risk register.
+### 5. Segmented offer design
+- **Minnows:** $5-10, frequent, aimed at converting them into Dolphins
+- **Dolphins:** $50-100 bundles, monthly, varied
+- **Whales:** $500-1000+ exclusives, quarterly, genuinely limited
 
-### 5. Special Offer Design (Segmented)
-Create tiered offers per segment:
-- **Minnows:** $5-10 offers, email + in-game (frequent, try to convert to Dolphins)
-- **Dolphins:** $50-100 bundle offers, email + push (monthly, variety of items)
-- **Whales:** $500-1000+ exclusive cosmetics, VIP access, SMS (quarterly, very limited)
+Anchor small → medium → big inside each segment. Peg timing to real-world anchors or product releases.
 
-Anchor sequence (small → medium → big) within each segment.
+**Output:** offer calendar, pricing framework, messaging templates.
 
-Timing: Peg to real-world anchors (holidays, weekends, events) or product releases.
+### 6. Retention metrics review
+Track weekly:
+- D1/D7/D30 retention
+- Churn rate (% of actives going dormant)
+- Reactivation rate post-sequence
+- DAU/MAU ratio (target >50%)
+- LTV by cohort and acquisition source
+- Event impact: did this event move anything?
 
-Output: Offer calendar + pricing framework + messaging templates.
+Retention down more than 5% week-over-week means stop and investigate before shipping anything else.
 
-### 6. Retention Metrics Dashboard
-Live tracking (weekly):
-- **D1/D7/D30 retention:** % of players active on Day 1/7/30 after first login
-- **Churn rate:** % of active users who go dormant (>30 days)
-- **Reactivation rate:** % of dormant users who return post-sequence
-- **DAU/MAU ratio:** % of monthly actives who play daily (Target: >50%)
-- **LTV by cohort:** Lifetime value by acquisition source + first release played
-- **Event impact:** Did this event move churn/retention metrics?
-
-Refresh weekly Friday. Alert on drops (retention down >5% week-over-week = investigate).
-
-Output: Live Google Sheets dashboard + email alerts.
-
----
-
-## Scheduled Routines
-- **Weekly (Monday):** Re-engagement monitoring (dormant user counts, reactivation rate by cohort)
-- **Bi-weekly (Wednesday):** Editorial calendar review (next 2 weeks on track? Go/no-go?)
-- **Monthly (First Friday):** LOVE Machine audit (all 4 pillars trending up/flat/down? What to fix?)
-- **Quarterly:** Full LOVE Machine redesign + retention target setting
-
----
+**Output:** `retention-metrics.tsv` plus a paste-ready TSV row per week.
 
 ## Outputs
-- **Google Sheets:** LOVE scorecard, editorial calendar, re-engagement sequence tracker, LiveOps roadmap, retention metrics dashboard
-- **Email:** Weekly retention digest (Friday AM) + monthly LOVE audit summary
-- **Discord:** Daily dormant user alerts, weekly editorial calendar prep, event post-mortems
 
----
+Markdown and TSV files in the user's project folder, plus paste-ready TSV blocks for Google Sheets. Nothing is sent or posted automatically.
 
-## Integration with Other Pillars
-- **Prediction:** Hypothesis-test each event, offer, and re-engagement sequence
-- **Reach:** Retention is cheaper than acquisition; measure how acquired cohorts perform vs organic
-- **Revenue:** Segment offers using R=M+D+W; measure LTV by segment, adjust accordingly
-- **Community Engine:** Community bonds = lowest churn; leverage community events as retention lever
-# retention-love-machine
+## Suggested cadence
 
-**Name:** retention-love-machine
-**Pillar:** RETENTION (Cb6 — LOVE Machine, LiveOps, Editorial Calendar, Re-engagement, Product Retention DNA)
-**Type:** Claude Agent / Skill (CRITICAL — retention > reach > revenue)
-**Trigger:** Retention strategy, churn neduction, editorial calendar, LiveOps, content calendar, product release planning, re-engagement, dormant users, special offers, community events, or direct invocation `/retention-love-machine`
+- **Weekly:** dormant-user check and reactivation rate by cohort.
+- **Bi-weekly:** editorial calendar review — is the next fortnight on track?
+- **Monthly:** LOVE Machine audit across all four pillars.
+- **Quarterly:** full redesign and retention target reset.
 
+Run these yourself, or wire the weekly check into a Claude Code scheduled task.
+
+## Integration with other pillars
+- **Prediction:** hypothesis-test every event, offer, and sequence (`/prediction-hypothesis-engine`)
+- **Reach:** retention is cheaper than acquisition — compare how acquired cohorts perform against organic (`/reach-funnel-builder`)
+- **Revenue:** segment with R = M + D + W and measure LTV per segment (`/revenue-freemium-architect`)
+- **Community:** community bonds produce the lowest churn of any lever (`/retention-community-engine`)

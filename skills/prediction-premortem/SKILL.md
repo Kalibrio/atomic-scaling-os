@@ -1,6 +1,6 @@
 ---
 name: prediction-premortem
-description: "Atomic Scaling PREDICTION agent. Run a premortem on any plan, launch, product, hire, strategy, or decision. Assumes it already failed 6 months from now and works backward to find every reason why. Produces a revised plan with blind spots exposed. MANDATORY TRIGGERS: 'premortem this', 'premortem my', 'run a premortem', 'what could kill this', 'future-proof this', 'stress test this plan', 'what am i missing here', 'find the blind spots'. STRONG TRIGGERS: 'what could go wrong', 'am i missing anything', 'poke holes in this', 'where will this break', 'devil's advocate this'. Do NOT trigger on simple feedback requests, factual questions, or LLM Council requests. DO trigger when someone has a plan or commitment where the cost of being wrong is high."
+description: "Atomic Scaling PREDICTION agent. Run a premortem on any plan, launch, product, hire, strategy, or decision. Assumes it already failed 6 months from now and works backward to find every reason why. Produces a revised plan with blind spots exposed. MANDATORY TRIGGERS: 'premortem this', 'premortem my', 'run a premortem', 'what could kill this', 'future-proof this', 'stress test this plan', 'what am i missing here', 'find the blind spots'. STRONG TRIGGERS: 'what could go wrong', 'am i missing anything', 'poke holes in this', 'where will this break', 'devil's advocate this'. Do NOT trigger on simple feedback requests, factual questions, or requests for the upside case (that's /playbook-postsuccess). DO trigger when someone has a plan or commitment where the cost of being wrong is high."
 ---
 
 # Premortem
@@ -188,7 +188,7 @@ Also provide a concise summary in the chat: the most likely failure, the hidden 
 
 ---
 
-## example: premortming a product launch
+## example: premorteming a product launch
 
 **User:** "premortem this: I'm about to launch a $297 live workshop on how to use Claude Cowork for marketing teams. 50 seats. Targeting marketing managers at companies with 10-50 employees."
 
@@ -215,4 +215,4 @@ Also provide a concise summary in the chat: the most likely failure, the hidden 
 - **Don't sugarcoat.** The whole point of a premortem is to tell the user things they don't want to hear before reality does. If a plan has serious problems, say so directly.
 - **The revised plan must be concrete.** Don't say "consider testing your pricing." Say "run a $47 pilot with 20 people before committing to the full $297 workshop." Every revision should be something the user can actually do this week.
 - **Respect the minimum context threshold.** Running a premortem on insufficient context produces generic failures that waste the user's time. It's better to ask one more question than to produce a bad premortem.
-- **This is not the LLM Council.** The council gives multiple perspectives on a decision right now. The premortem sends Claude into the future where the decision already failed and works backward to explain why. Different psychological mechanism, different output. If the user seems to want multiple perspectives rather than failure analysis, suggest the council instead.
+- **This is failure analysis, not general feedback.** If the user wants multiple perspectives on a decision they're still forming, or a critique of a draft, that's a different job — answer it directly instead of forcing the premortem frame. And if what they actually want is the upside case, run `/playbook-postsuccess`: same mechanism, opposite direction.

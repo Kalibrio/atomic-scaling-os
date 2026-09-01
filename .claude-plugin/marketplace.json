@@ -1,0 +1,18 @@
+{
+    "name": "atomic-scaling-os",
+    "metadata": {
+        "description": "Atomic Scaling OS — Claude agents for scaling revenue without hiring more, built on the 3P3R Method®."
+    },
+    "owner": {
+        "name": "Ludovic Bodin",
+        "email": "lbodin@gmail.com",
+        "url": "https://atomicscaling.com"
+    },
+    "plugins": [
+        {
+            "name": "atomic-scaling-os",
+            "source": "./",
+            "description": "Claude agents for scaling revenue without hiring more, built on the 3P3R Method® from Atomic Scaling by Ludovic Bodin."
+        }
+    ]
+}

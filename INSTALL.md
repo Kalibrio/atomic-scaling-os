@@ -1,6 +1,6 @@
 # Install Atomic Scaling OS
 
-Two ways to use the 15 agents. The first one (Claude Code Desktop) is the recommended setup — it's what the skills are designed for, and it works without ever touching a terminal.
+Two ways to use the 14 agents. The first one (Claude Code Desktop) is the recommended setup — it's what the skills are designed for, and it works without ever touching a terminal.
 
 | You want to… | Use |
 |---|---|
@@ -49,10 +49,10 @@ Claude Code will respond confirming it added the repo as a marketplace. Takes 1�
 **Then type this and press Enter:**
 
 ```
-/plugin install atomic-scaling-os@kalibrio/atomic-scaling-os
+/plugin install atomic-scaling-os@atomic-scaling-os
 ```
 
-Claude Code will respond saying the plugin is installed and 15 skills are now available.
+Claude Code will respond saying the plugin is installed and 14 skills are now available.
 
 ### Step 4 — Test that it worked
 
@@ -91,13 +91,13 @@ Total run: ~2–3 minutes.
 
 ### Step 6 — Try the other 14 skills
 
-Once installed, you have all 15 available the same way. Type `/` in the chat box and start typing a pillar name:
+Once installed, you have all 14 available the same way. Type `/` in the chat box and start typing a pillar name:
 
 - Type `/peo` → People (`team-architect`, `culture-pulse`, `d100-talents`)
 - Type `/pre` → Prediction (`hypothesis-engine`, `forecast-analyst`, `premortem`)
 - Type `/play` → Playbook (`mission-designer`, `rhythm-keeper`, `postsuccess`)
 - Type `/rev` → Revenue (`freemium-architect`, `optimizer`)
-- Type `/rea` → Reach (`funnel-builder`, `growth-tracker`)
+- Type `/rea` → Reach (`funnel-builder` — acquisition funnels + CAC by channel)
 - Type `/ret` → Retention (`love-machine`, `community-engine`)
 
 Each one is a slash command that opens a session with that specialist agent.
@@ -125,9 +125,9 @@ Each one is a slash command that opens a session with that specialist agent.
 
 ### What's actually happening under the hood
 
-- `/plugin marketplace add kalibrio/atomic-scaling-os` → tells Claude Code "look at this GitHub repo as a source of plugins." Clones the repo into `~/.claude/plugins/atomic-scaling-os/` on your computer.
-- `/plugin install …` → activates that plugin, registering all 15 skills as slash commands.
-- When you type `/playbook-postsuccess`, Claude Code finds the file `~/.claude/plugins/atomic-scaling-os/skills/playbook-postsuccess/SKILL.md` and uses its contents as the instructions for that session.
+- `/plugin marketplace add kalibrio/atomic-scaling-os` → tells Claude Code "look at this GitHub repo as a source of plugins." Claude Code downloads the repo and registers it as a plugin marketplace.
+- `/plugin install …` → activates that plugin, registering all 14 skills as slash commands.
+- When you type `/playbook-postsuccess`, Claude Code finds that skill's SKILL.md in the installed plugin and uses its contents as the instructions for that session.
 - Sub-agents run as parallel Claude calls — that's why the skill can analyze 6+ leverage points simultaneously rather than one at a time.
 - HTML reports get written to whatever folder you opened in Step 2.
 
@@ -136,18 +136,18 @@ Each one is a slash command that opens a session with that specialist agent.
 If `/plugin marketplace add` doesn't work for any reason, you can clone the repo directly. Open **Terminal** (Applications → Utilities → Terminal on Mac) and paste:
 
 ```bash
-git clone https://github.com/kalibrio/atomic-scaling-os.git ~/.claude/plugins/atomic-scaling-os
+git clone https://github.com/kalibrio/atomic-scaling-os.git
+cp -R atomic-scaling-os/skills/* ~/.claude/skills/
 ```
 
-Then in Claude Code, run `/reload-plugins`. Skills appear after the reload.
+Then restart Claude Code (or start a new session) — the skills load from `~/.claude/skills/`.
 
 ### Share with your team
 
 Copy the plugin into a shared project repo so your whole team gets it on clone:
 
 ```bash
-cp -Rf ~/.claude/plugins/atomic-scaling-os .claude/plugins/atomic-scaling-os
-rm -rf .claude/plugins/atomic-scaling-os/.git
+git clone https://github.com/kalibrio/atomic-scaling-os.git /tmp/atomic-scaling-os && mkdir -p .claude/skills && cp -R /tmp/atomic-scaling-os/skills/* .claude/skills/ && rm -rf /tmp/atomic-scaling-os
 ```
 
 Commit the `.claude/` directory. Nothing touches your `PATH` or runs in the background — everything stays inside the project folder.
@@ -227,13 +227,13 @@ For your own day-to-day use of the 3P3R OS, **Path A is the intended runtime**.
 
 ## What you get
 
-15 slash commands organized by the **3P3R Method®** — six pillars covering the full scaling stack:
+14 slash commands organized by the **3P3R Method®** — six pillars covering the full scaling stack:
 
 - **People** — `/people-team-architect`, `/people-culture-pulse`, `/people-d100-talents`
 - **Prediction** — `/prediction-hypothesis-engine`, `/prediction-forecast-analyst`, `/prediction-premortem`
 - **Playbook** — `/playbook-mission-designer`, `/playbook-rhythm-keeper`, `/playbook-postsuccess`
 - **Revenue** — `/revenue-freemium-architect`, `/revenue-optimizer`
-- **Reach** — `/reach-funnel-builder`, `/reach-growth-tracker`
+- **Reach** — `/reach-funnel-builder`
 - **Retention** — `/retention-love-machine`, `/retention-community-engine`
 
 See the [README](README.md) for what each agent does.

@@ -1,15 +1,24 @@
 {
     "name": "atomic-scaling-os",
-    "description": "15 Claude agents based on the 3P3R Method® from Atomic Scaling by Ludovic Bodin. A Human-Assisted Autonomous Organization (HAAO) that helps entrepreneurs scale revenue and profit without hiring more or working more.",
-    "version": "1.1.0",
+    "description": "14 Claude agents based on the 3P3R Method\u00ae from Atomic Scaling by Ludovic Bodin. A Human-Assisted Autonomous Organization (HAAO) that helps entrepreneurs scale revenue and profit without hiring more or working more.",
+    "version": "1.2.0",
     "author": {
-          "name": "Ludovic Bodin",
-          "email": "lbodin@gmail.com",
-          "url": "https://atomicscaling.com"
+        "name": "Ludovic Bodin",
+        "email": "lbodin@gmail.com",
+        "url": "https://atomicscaling.com"
     },
-    "repository": "https://github.com/kalibrio/atomic-scaling-os",
+    "repository": "https://github.com/Kalibrio/atomic-scaling-os",
     "homepage": "https://atomicscaling.com",
     "license": "MIT",
-    "keywords": ["scaling", "growth", "3P3R", "revenue", "retention", "reach", "startup", "founder"],
+    "keywords": [
+        "scaling",
+        "growth",
+        "3P3R",
+        "revenue",
+        "retention",
+        "reach",
+        "startup",
+        "founder"
+    ],
     "skills": "./skills/"
 }
